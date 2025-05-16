@@ -1,167 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fix Your Device - Mobile Techs</title>
-<script src="https://cdn.tailwindcss.com/3.4.16"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          primary: '#0066cc',
-          secondary: '#ff3b30',
-        },
-        borderRadius: {
-          'button': '8px',
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fix Your Device - Mobile Techs</title>
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0066cc',
+            secondary: '#ff3b30'
+          },
+          borderRadius: {
+            button: '8px'
+          }
         }
       }
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .chatbot-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
     }
-  }
-</script>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
-<style>
-body { font-family: 'Poppins', sans-serif; }
-.hero-section {
-  background-image: url('https://readdy.ai/api/search-image?query=professional%20repair%20technician%20carefully%20examining%20and%20repairing%20a%20smartphone&width=1600&height=800');
-  background-size: cover;
-  background-position: center right;
-}
-.hero-content {
-  background: linear-gradient(to right, rgba(255,255,255,0.95) 50%, rgba(255,255,255,0.8) 70%, rgba(255,255,255,0) 100%);
-}
-.chatbot-icon {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-.chatbot {
-  display: none;
-  position: fixed;
-  bottom: 90px;
-  right: 20px;
-  width: 350px;
-  height: 450px;
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  z-index: 1000;
-}
-.chatbot-header { background: #0066cc; color: white; padding: 15px; font-weight: 600; }
-.chatbot-messages { height: 310px; padding: 15px; overflow-y: auto; }
-.message { margin-bottom: 10px; max-width: 80%; padding: 10px 15px; border-radius: 18px; }
-.bot { background: #f3f4f6; align-self: flex-start; border-bottom-left-radius: 4px; }
-.user { background: #e6f2ff; align-self: flex-end; margin-left: auto; border-bottom-right-radius: 4px; }
-</style>
+    .chatbot-icon:hover { transform: scale(1.05); }
+    .chatbot { display: none; position: fixed; bottom: 90px; right: 20px; width: 350px; height: 450px; background: white; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); z-index: 1000; overflow: hidden; }
+    .chatbot-header { background: #0066cc; color: white; padding: 15px; font-weight: 600; display: flex; justify-content: space-between; align-items: center; }
+    .chatbot-messages { height: 310px; padding: 15px; overflow-y: auto; }
+    .chatbot-input { border-top: 1px solid #e5e7eb; padding: 10px 15px; display: flex; }
+    .message { margin-bottom: 10px; max-width: 80%; padding: 10px 15px; border-radius: 18px; }
+    .bot { background: #f3f4f6; align-self: flex-start; border-bottom-left-radius: 4px; }
+    .user { background: #e6f2ff; align-self: flex-end; margin-left: auto; border-bottom-right-radius: 4px; }
+  </style>
 </head>
 <body class="bg-white">
 
-<!-- Header -->
-<header class="w-full py-4 px-6 bg-white shadow-sm">
-  <div class="max-w-7xl mx-auto flex justify-between items-center">
-    <div class="flex items-center">
-      <span class="text-2xl font-bold text-primary">Mobile</span>
-      <div class="relative">
-        <span class="text-2xl font-bold text-secondary">Techs</span>
-        <i class="ri-quill-pen-fill text-secondary absolute -top-2 -right-4 transform rotate-45"></i>
+  <!-- Your original Readdy fix.html content starts here -->
+  <section class="py-20">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-bold text-center mb-6">Fix Your Device</h1>
+      <p class="text-center text-gray-600 mb-10">Fast, professional repairs for all major device brands. Select your device type to get started.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <i class="ri-smartphone-line text-6xl text-primary mb-4"></i>
+          <h2 class="text-xl font-semibold mb-2">iPhone Repair</h2>
+          <p class="text-gray-600 mb-4">Screen, battery, and other repairs for all iPhone models.</p>
+          <a href="#" class="text-primary font-medium hover:underline">Get Started</a>
+        </div>
+        <div class="text-center">
+          <i class="ri-android-line text-6xl text-primary mb-4"></i>
+          <h2 class="text-xl font-semibold mb-2">Samsung Repair</h2>
+          <p class="text-gray-600 mb-4">Expert repairs for Galaxy series devices and more.</p>
+          <a href="#" class="text-primary font-medium hover:underline">Get Started</a>
+        </div>
+        <div class="text-center">
+          <i class="ri-tablet-line text-6xl text-primary mb-4"></i>
+          <h2 class="text-xl font-semibold mb-2">Tablet Repair</h2>
+          <p class="text-gray-600 mb-4">iPad, Galaxy Tab, and other tablet repairs.</p>
+          <a href="#" class="text-primary font-medium hover:underline">Get Started</a>
+        </div>
       </div>
     </div>
-    <nav class="hidden md:flex space-x-6">
-      <a href="index.html" class="text-gray-700 hover:text-primary">Home</a>
-      <a href="fix.html" class="text-primary">Fix</a>
-      <a href="buy.html" class="text-gray-700 hover:text-primary">Buy</a>
-      <a href="sell.html" class="text-gray-700 hover:text-primary">Sell</a>
-      <a href="about.html" class="text-gray-700 hover:text-primary">About</a>
-      <a href="faq.html" class="text-gray-700 hover:text-primary">FAQ</a>
-    </nav>
-  </div>
-</header>
+  </section>
+  <!-- End Readdy fix.html content -->
 
-<!-- Hero Section -->
-<section class="hero-section w-full min-h-[600px] flex items-center">
-  <div class="hero-content w-full py-20 px-6">
-    <div class="max-w-7xl mx-auto">
-      <div class="max-w-xl">
-        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Professional Device Repair Services</h1>
-        <p class="text-lg text-gray-700 mb-8">Expert technicians ready to fix your devices with quality parts and quick turnaround times.</p>
-        <a href="#quote" class="bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-primary/90 transition shadow-lg">Get a Quote</a>
-      </div>
+  <!-- Chatbot Icon -->
+  <div class="chatbot-icon w-16 h-16 bg-primary rounded-full flex items-center justify-center cursor-pointer" id="chatbot-trigger">
+    <div class="relative">
+      <i class="ri-customer-service-2-line ri-xl text-white"></i>
+      <div class="absolute -top-1 -right-1 w-4 h-4 bg-secondary rounded-full"></div>
     </div>
   </div>
-</section>
 
-<!-- Placeholder Section (could be more service info, quotes, etc.) -->
-<section id="quote" class="py-16 px-6 bg-gray-50">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-4">Start Your Repair</h2>
-    <p class="text-gray-600 mb-6">Fill out the form to get an estimate or book a repair appointment.</p>
-    <!-- Simple Form Placeholder -->
-    <form class="space-y-4">
-      <input type="text" placeholder="Device Model" class="w-full px-4 py-3 border rounded">
-      <textarea placeholder="Describe the Issue" class="w-full px-4 py-3 border rounded"></textarea>
-      <button type="submit" class="bg-primary text-white px-6 py-3 rounded-button">Submit</button>
-    </form>
+  <!-- Chatbot Interface -->
+  <div class="chatbot" id="chatbot">
+    <div class="chatbot-header">
+      <span>Mobile Techs Support</span>
+      <button id="close-chatbot"><i class="ri-close-line ri-lg"></i></button>
+    </div>
+    <div class="chatbot-messages flex flex-col" id="chatbot-messages">
+      <div class="message bot">Hi there! 👋 How can I help you today? You can ask about repairs, buying, or selling devices.</div>
+    </div>
+    <div class="chatbot-input">
+      <input type="text" id="chat-input" placeholder="Type your message..." class="w-full border-none focus:ring-0 text-gray-800" />
+      <button id="send-message" class="ml-2 text-primary"><i class="ri-send-plane-fill ri-lg"></i></button>
+    </div>
   </div>
-</section>
 
-<!-- Footer -->
-<footer class="bg-gray-900 text-white py-12 px-6">
-  <div class="max-w-7xl mx-auto flex justify-between items-center">
-    <p class="text-gray-400 text-sm">© 2025 Mobile Techs. All rights reserved.</p>
-  </div>
-</footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const chatbotTrigger = document.getElementById('chatbot-trigger');
+      const chatbot = document.getElementById('chatbot');
+      const closeButton = document.getElementById('close-chatbot');
+      const sendButton = document.getElementById('send-message');
+      const chatInput = document.getElementById('chat-input');
+      const messagesContainer = document.getElementById('chatbot-messages');
 
-<!-- Chatbot Icon -->
-<div class="chatbot-icon w-16 h-16 bg-primary rounded-full flex items-center justify-center cursor-pointer" id="chatbot-trigger">
-  <i class="ri-customer-service-2-line text-white ri-xl"></i>
-</div>
+      chatbotTrigger.addEventListener('click', () => { chatbot.style.display = 'block'; });
+      closeButton.addEventListener('click', () => { chatbot.style.display = 'none'; });
 
-<!-- Chatbot Interface -->
-<div class="chatbot" id="chatbot">
-  <div class="chatbot-header flex justify-between items-center">
-    <div>Mobile Techs Support</div>
-    <button id="close-chatbot" class="text-white"><i class="ri-close-line ri-lg"></i></button>
-  </div>
-  <div class="chatbot-messages flex flex-col" id="chatbot-messages">
-    <div class="message bot">Hi there! 👋 How can I help you today?</div>
-  </div>
-  <div class="chatbot-input p-4 flex border-t">
-    <input type="text" id="chat-input" placeholder="Type your message..." class="flex-grow border rounded px-3 py-2">
-    <button id="send-message" class="ml-2 text-primary"><i class="ri-send-plane-fill ri-xl"></i></button>
-  </div>
-</div>
+      function sendMessage() {
+        const message = chatInput.value.trim();
+        if (message) {
+          const userMessage = document.createElement('div');
+          userMessage.className = 'message user';
+          userMessage.textContent = message;
+          messagesContainer.appendChild(userMessage);
+          chatInput.value = '';
+          messagesContainer.scrollTop = messagesContainer.scrollHeight;
 
-<script>
-document.getElementById('chatbot-trigger').addEventListener('click', function() {
-  document.getElementById('chatbot').style.display = 'block';
-});
-document.getElementById('close-chatbot').addEventListener('click', function() {
-  document.getElementById('chatbot').style.display = 'none';
-});
-document.getElementById('send-message').addEventListener('click', function() {
-  const input = document.getElementById('chat-input');
-  const msg = input.value.trim();
-  if (msg) {
-    const userMsg = document.createElement('div');
-    userMsg.className = 'message user';
-    userMsg.textContent = msg;
-    document.getElementById('chatbot-messages').appendChild(userMsg);
-    input.value = '';
-    // Dummy Bot Response
-    setTimeout(() => {
-      const botMsg = document.createElement('div');
-      botMsg.className = 'message bot';
-      botMsg.textContent = "Thanks for reaching out! We'll get back to you soon.";
-      document.getElementById('chatbot-messages').appendChild(botMsg);
-    }, 1000);
-  }
-});
-</script>
+          setTimeout(() => {
+            const botMessage = document.createElement('div');
+            botMessage.className = 'message bot';
+            if (message.toLowerCase().includes('repair')) {
+              botMessage.textContent = 'Great! What device do you need repaired?';
+            } else if (message.toLowerCase().includes('buy')) {
+              botMessage.textContent = 'Looking to buy? We have certified pre-owned phones available.';
+            } else if (message.toLowerCase().includes('sell')) {
+              botMessage.textContent = 'You can sell your device with us. What model are you looking to sell?';
+            } else {
+              botMessage.textContent = 'How can I assist you with our repair, buy, or sell services today?';
+            }
+            messagesContainer.appendChild(botMessage);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+          }, 800);
+        }
+      }
 
+      sendButton.addEventListener('click', sendMessage);
+      chatInput.addEventListener('keypress', e => { if (e.key === 'Enter') sendMessage(); });
+    });
+  </script>
 </body>
 </html>
