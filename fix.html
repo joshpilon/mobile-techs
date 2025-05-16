@@ -4,6 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fix Your Device - Mobile Techs</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6TZ4QP1RBP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6TZ4QP1RBP');
+  </script>
   <script src="https://cdn.tailwindcss.com/3.4.16"></script>
   <script>
     tailwind.config = {
@@ -80,65 +87,7 @@
     </div>
   </section>
 
-  <!-- Chatbot Icon -->
-  <div class="chatbot-icon w-16 h-16 bg-primary rounded-full flex items-center justify-center cursor-pointer" id="chatbot-trigger">
-    <div class="relative">
-      <i class="ri-customer-service-2-line ri-xl text-white"></i>
-      <div class="absolute -top-1 -right-1 w-4 h-4 bg-secondary rounded-full"></div>
-    </div>
-  </div>
-
-  <!-- Chatbot Interface -->
-  <div class="chatbot" id="chatbot">
-    <div class="chatbot-header">
-      <span>Mobile Techs Support</span>
-      <button id="close-chatbot"><i class="ri-close-line ri-lg"></i></button>
-    </div>
-    <div class="chatbot-messages flex flex-col" id="chatbot-messages">
-      <div class="message bot">Hi there! 👋 How can I help you today?</div>
-    </div>
-    <div class="chatbot-input">
-      <input type="text" id="chat-input" placeholder="Type your message..." class="w-full border-none focus:ring-0 text-gray-800" />
-      <button id="send-message" class="ml-2 text-primary"><i class="ri-send-plane-fill ri-lg"></i></button>
-    </div>
-  </div>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const chatbotTrigger = document.getElementById('chatbot-trigger');
-      const chatbot = document.getElementById('chatbot');
-      const closeButton = document.getElementById('close-chatbot');
-      const sendButton = document.getElementById('send-message');
-      const chatInput = document.getElementById('chat-input');
-      const messagesContainer = document.getElementById('chatbot-messages');
-
-      chatbotTrigger.addEventListener('click', () => chatbot.style.display = 'block');
-      closeButton.addEventListener('click', () => chatbot.style.display = 'none');
-
-      function sendMessage() {
-        const message = chatInput.value.trim();
-        if (message) {
-          const userMessage = document.createElement('div');
-          userMessage.className = 'message user';
-          userMessage.textContent = message;
-          messagesContainer.appendChild(userMessage);
-          chatInput.value = '';
-          messagesContainer.scrollTop = messagesContainer.scrollHeight;
-
-          setTimeout(() => {
-            const botMessage = document.createElement('div');
-            botMessage.className = 'message bot';
-            botMessage.textContent = 'How can I assist you with repair, buy, or sell services today?';
-            messagesContainer.appendChild(botMessage);
-            messagesContainer.scrollTop = messagesContainer.scrollHeight;
-          }, 800);
-        }
-      }
-
-      sendButton.addEventListener('click', sendMessage);
-      chatInput.addEventListener('keypress', e => { if (e.key === 'Enter') sendMessage(); });
-    });
-  </script>
+  <!-- (Optional Chatbot can be added later here) -->
 
 </body>
 </html>
