@@ -1,52 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-   <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://themobiletechs.com/[pagename].html">
-
 <head>
-   <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6TZ4QP1RBP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6TZ4QP1RBP');
-</script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Techs - Phone Repair Services</title>
-    <meta name="description" content="Quick and reliable mobile phone repairs in Lewiston. Screens, batteries, water damage & more.">
-    <meta name="keywords" content="phone repair, screen replacement, battery repair, Lewiston, Mobile Techs">
-    <meta name="author" content="Mobile Techs LLC">
-    <meta property="og:title" content="Mobile Techs - Phone Repair Services">
-    <meta property="og:description" content="Quick and reliable mobile phone repairs in Lewiston. Screens, batteries, water damage & more.">
-    <meta property="og:image" content="https://themobiletechs.com/assets/og-image.png">
-    <meta property="og:url" content="https://themobiletechs.com/fix.html">
-    <meta property="og:type" content="website">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="dummy.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fix Your Device - Mobile Techs</title>
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0066cc',
+            secondary: '#ff3b30',
+          },
+          borderRadius: {
+            button: '8px',
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .device-card { transition: transform 0.3s ease; }
+    .device-card:hover { transform: translateY(-5px); }
+  </style>
 </head>
-<body>
-   <nav>
-    <a href="index.html">Home</a> |
-    <a href="fix.html">Fix</a> |
-    <a href="buy.html">Buy</a> |
-    <a href="sell.html">Sell</a> |
-    <a href="about.html">About</a> |
-    <a href="faq.html">FAQ</a>
-  </nav>
+<body class="bg-white">
 
-    <h1>Fix Your Device</h1>
-    <p>We specialize in repairing screens, batteries, and more. Visit Mobile Techs in Lewiston today!</p>
+<!-- Header -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <a href="index.html" class="text-3xl font-bold">
+      <span class="text-[#0A4B9F]">Mobile</span><span class="text-[#FF3B30]">Techs</span>
+    </a>
+    <nav class="hidden md:flex space-x-8">
+      <a href="index.html" class="text-gray-800 hover:text-primary font-medium">Home</a>
+      <a href="fix.html" class="text-primary font-medium">Fix</a>
+      <a href="buy.html" class="text-gray-800 hover:text-primary font-medium">Buy</a>
+      <a href="sell.html" class="text-gray-800 hover:text-primary font-medium">Sell</a>
+      <a href="about.html" class="text-gray-800 hover:text-primary font-medium">About</a>
+      <a href="faq.html" class="text-gray-800 hover:text-primary font-medium">FAQ</a>
+    </nav>
+    <button id="menu-btn" class="md:hidden text-gray-800 text-2xl">
+      <i class="ri-menu-line"></i>
+    </button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="relative">
+  <div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent z-10"></div>
+  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=smartphone+repair+technician&width=1920&height=1080&seq=fix1');"></div>
+  <div class="relative container mx-auto px-4 py-24 z-20">
+    <h1 class="text-5xl font-bold text-gray-900 mb-6">Fix Your Device</h1>
+    <p class="text-xl text-gray-700 mb-8">Certified repairs for phones, tablets, and more. Most repairs completed same-day.</p>
+    <a href="#book-repair" class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-primary/90 transition">Start My Repair</a>
+  </div>
+</section>
+
+<!-- Device Options -->
+<section class="py-16">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12">Select Your Device</h2>
+    <div class="grid md:grid-cols-4 gap-8">
+      <div class="device-card bg-white p-6 rounded-lg shadow hover:shadow-lg text-center cursor-pointer">
+        <i class="ri-smartphone-line text-primary text-4xl mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">iPhone</h3>
+        <p class="text-gray-600">All iPhone models supported</p>
+      </div>
+      <div class="device-card bg-white p-6 rounded-lg shadow hover:shadow-lg text-center cursor-pointer">
+        <i class="ri-android-line text-primary text-4xl mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Samsung</h3>
+        <p class="text-gray-600">Galaxy & Note series</p>
+      </div>
+      <div class="device-card bg-white p-6 rounded-lg shadow hover:shadow-lg text-center cursor-pointer">
+        <i class="ri-tablet-line text-primary text-4xl mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">iPad</h3>
+        <p class="text-gray-600">All iPad models</p>
+      </div>
+      <div class="device-card bg-white p-6 rounded-lg shadow hover:shadow-lg text-center cursor-pointer">
+        <i class="ri-device-line text-primary text-4xl mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Other Devices</h3>
+        <p class="text-gray-600">Google, OnePlus & more</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Booking Form -->
+<section id="book-repair" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12">Book Your Repair</h2>
+    <form class="bg-white p-8 rounded-lg shadow max-w-xl mx-auto space-y-6">
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">Device Type</label>
+        <select class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-primary">
+          <option>Select your device</option>
+          <option>iPhone</option>
+          <option>Samsung</option>
+          <option>iPad</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">Model</label>
+        <input type="text" placeholder="e.g. iPhone 13 Pro" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-primary" />
+      </div>
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">Repair Type</label>
+        <select class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-primary">
+          <option>Screen Repair</option>
+          <option>Battery Replacement</option>
+          <option>Water Damage</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">Your Name</label>
+        <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-primary" />
+      </div>
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">Email</label>
+        <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-primary" />
+      </div>
+      <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-primary/90 transition">Submit Request</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-8">
+  <div class="container mx-auto px-4 text-center">
+    <p>&copy; 2025 Mobile Techs. All rights reserved.</p>
+  </div>
+</footer>
+
 </body>
 </html>
