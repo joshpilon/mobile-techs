@@ -1,93 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fix Your Device - Mobile Techs</title>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6TZ4QP1RBP"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-6TZ4QP1RBP');
-  </script>
-  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#0066cc',
-            secondary: '#ff3b30'
-          },
-          borderRadius: {
-            button: '8px'
-          }
-        }
-      }
-    };
-  </script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
-  <style>
-    body { font-family: 'Poppins', sans-serif; }
-    .hero {
-      background-image: url('https://readdy.ai/api/search-image?query=professional%20repair%20technician%20carefully%20examining%20and%20repairing%20a%20smartphone%2C%20wearing%20anti-static%20gloves%2C%20using%20precision%20tools%2C%20organized%20workspace%20with%20technical%20equipment%20and%20replacement%20parts%20visible%2C%20soft%20professional%20lighting%20highlighting%20technical%20expertise%2C%20clean%20modern%20repair%20facility%20background%2C%20ultra%20high%20resolution%208k%20photography%20with%20technical%20detail&width=1920&height=1080&seq=fix1&orientation=landscape');
-      background-size: cover;
-      background-position: center right;
-    }
-    .hero-overlay {
-      background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.8) 70%, rgba(255, 255, 255, 0) 100%);
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Device Repair Services</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#10b981'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Inter', sans-serif;
+}
+input, select, textarea {
+outline: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+.hero-section {
+background-image: url('https://readdy.ai/api/search-image?query=A%20casual%20and%20relatable%20scene%20in%20a%20bright%20phone%20repair%20shop%20where%20a%20frustrated%20but%20hopeful%20teenager%20in%20casual%20clothes%20is%20gesturing%20animatedly%20while%20explaining%20their%20broken%20phone%20to%20a%20friendly%20technician.%20The%20technician%2C%20wearing%20a%20casual%20uniform%2C%20leans%20in%20with%20genuine%20interest%20and%20an%20encouraging%20smile.%20The%20teenagers%20body%20language%20shows%20both%20concern%20and%20trust.%20The%20scene%20captures%20a%20natural%2C%20warm%20moment%20with%20soft%20lighting%20that%20creates%20an%20inviting%20atmosphere.%20The%20left%20side%20transitions%20smoothly%20into%20a%20clean%20white%20background.%20The%20composition%20feels%20authentic%20and%20engaging%2C%20like%20a%20slice%20of%20everyday%20life.&width=1600&height=800&seq=12345&orientation=landscape');
+background-size: cover;
+background-position: center right;
+}
+.hero-content {
+background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.8) 70%, rgba(255, 255, 255, 0) 100%);
+}
+</style>
 </head>
-<body class="bg-white">
-
-  <!-- Hero Section -->
-  <section class="hero relative h-[600px] flex items-center">
-    <div class="hero-overlay absolute inset-0"></div>
-    <div class="relative z-10 container mx-auto px-4">
-      <div class="max-w-xl">
-        <h1 class="text-5xl font-bold text-gray-900 mb-6">Professional Device Repair Services</h1>
-        <p class="text-lg text-gray-700 mb-8">Expert technicians ready to fix your devices with quality parts and quick turnaround times. Trusted by thousands of satisfied customers.</p>
-        <a href="#quote-form" class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-primary/90 transition">Start My Repair</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section class="py-16 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <div class="text-center mb-12">
-        <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Repair Services</h2>
-        <p class="text-xl text-gray-600 max-w-2xl mx-auto">We specialize in screen repairs, battery replacements, water damage recovery, and more.</p>
-      </div>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
-          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-            <i class="ri-smartphone-line text-primary ri-2x"></i>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">Screen Repair</h3>
-          <p class="text-gray-600 mb-6 text-center">Fix cracked screens, dead pixels, or touch response issues.</p>
-        </div>
-        <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
-          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-            <i class="ri-battery-2-charge-line text-primary ri-2x"></i>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">Battery Replacement</h3>
-          <p class="text-gray-600 mb-6 text-center">Restore battery life with high-quality replacements.</p>
-        </div>
-        <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
-          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-            <i class="ri-water-flash-line text-primary ri-2x"></i>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">Water Damage</h3>
-          <p class="text-gray-600 mb-6 text-center">Professional water damage treatment and repair.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- (Optional Chatbot can be added later here) -->
-
+<body class="bg-white min-h-screen">
+<!-- Header -->
+<header class="w-full py-4 px-6 bg-white shadow-sm">
+<div class="max-w-7xl mx-auto flex justify-between items-center">
+<!-- Logo Structure -->
+<div class="flex items-center">
+<span class="text-2xl font-bold text-primary">Mobile</span>
+<div class="relative">
+<span class="text-2xl font-bold text-red-500">Techs</span>
+<i class="ri-quill-pen-fill text-red-500 absolute -top-2 -right-4 transform rotate-45"></i>
+</div>
+</div>
+<!-- End Logo Structure -->
+<div class="flex items-center">
+<nav class="hidden md:flex space-x-6">
+<a href="#" class="text-gray-700 hover:text-primary font-medium">Home</a>
+<a href="#" class="text-gray-700 hover:text-primary font-medium">Fix</a>
+<a href="#" class="text-gray-700 hover:text-primary font-medium">Buy</a>
+<a href="#" class="text-gray-700 hover:text-primary font-medium">Sell</a>
+<a href="#" class="text-gray-700 hover:text-primary font-medium">About</a>
+<a href="#" class="text-gray-700 hover:text-primary font-medium">FAQ</a>
+</nav>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero-section w-full min-h-[600px] flex items-center">
+<div class="hero-content w-full py-20 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="max-w-xl">
+<h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Professional Device Repair Services</h1>
+<p class="text-lg text-gray-700 mb-8">Expert technicians ready to fix your devices with quality parts and quick turnaround times. Trusted by thousands of satisfied customers.</p>
+<button class="bg-primary text-white px-8 py-3 !rounded-button whitespace-nowrap font-medium text-lg hover:bg-primary/90 transition-colors shadow-lg flex items-center">
+Start My Repair
+<div class="w-6 h-6 flex items-center justify-center ml-2">
+<i class="ri-arrow-right-line"></i>
+</div>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Categories -->
+<section class="py-16 px-6 bg-gray-50">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-3">Our Repair Services</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">We specialize in a wide range of device repairs to get your technology back up and running quickly.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Screen Repair -->
+<div class="bg-white p-6 rounded shadow-md hover:shadow-lg transition-shadow">
+<div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-smartphone-line text-primary ri-xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Screen Repair</h3>
+<p class="text-gray-600 mb-4">Fix cracked, shattered, or unresponsive screens with our premium replacement parts.</p>
+<a href="#" class="text-primary font-medium flex items-center hover:underline">
+Learn More
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-s-line"></i>
+</div>
+</a>
+</div>
+<!-- Battery Replacement -->
+<div class="bg-white p-6 rounded shadow-md hover:shadow-lg transition-shadow">
+<div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-battery-2-charge-line text-primary ri-xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Battery Replacement</h3>
+<p class="text-gray-600 mb-4">Restore your device's power with high-quality battery replacements for longer life.</p>
+<a href="#" class="text-primary font-medium flex items-center hover:underline">
+Learn More
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-s-line"></i>
+</div>
+</a>
+</div>
+<!-- Water Damage -->
+<div class="bg-white p-6 rounded shadow-md hover:shadow-lg transition-shadow">
+<div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-water-flash-line text-primary ri-xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Water Damage</h3>
+<p class="text-gray-600 mb-4">Specialized treatment for water-damaged devices to recover functionality and data.</p>
+<a href="#" class="text-primary font-medium flex items-center hover:underline">
+Learn More
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-s-line"></i>
+</div>
+</a>
+</div>
+<!-- Other Common Issues -->
+<div class="bg-white p-6 rounded shadow-md hover:shadow-lg transition-shadow">
+<div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-tools-line text-primary ri-xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Other Common Issues</h3>
+<p class="text-gray-600 mb-4">From charging ports to camera issues, we fix all common device problems.</p>
+<a href="#" class="text-primary font-medium flex items-center hover:underline">
+Learn More
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-s-line"></i>
+</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Quote Form -->
+<section id="repair-quote-section" class="py-16 px-6 bg-white">
+<div class="max-w-7xl mx-auto">
+<div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-2">
+<div class="p-8 lg:p-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-6">Get Your Repair Quote</h2>
+<p class="text-gray-600 mb-8">Fill out the form below to start your repair process. Our technician will contact you shortly with details.</p>
+<form class="space-y-6">
+<div>
+<label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+<input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors" placeholder="Enter your name">
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+<input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors" placeholder="Enter your email">
+</div>
+<div>
+<label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+<input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors" placeholder="Enter your phone">
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label for="brand" class="block text-sm font-medium text-gray-700 mb-1">Device Brand</label>
+<div class="relative">
+<select id="brand" class="w-full px-4 py-3 border border-gray-300 rounded appearance-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors pr-8">
+<option value="" disabled selected>Select brand</option>
+<option value="apple">Apple</option>
+<option value="samsung">Samsung</option>
+<option value="google">Google</option>
+<option value="huawei">Huawei</option>
+<option value="xiaomi">Xiaomi</option>
+<option value="other">Other</option>
+</select>
+<div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+<i class="ri-arrow-down-s-line text-gray-400"></i>
+</div>
+</div>
+</div>
+<div>
+<label for="model" class="block text-sm font-medium text-gray-700 mb-1">Device Model</label>
+<input type="text" id="model" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors" placeholder="e.g. iPhone 13 Pro">
+</div>
+</div>
+<div>
+<label for="problem" class="block text-sm font-medium text-gray-700 mb-1">Problem Description</label>
+<textarea id="problem" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors" placeholder="Please describe the issue with your device"></textarea>
+</div>
+<button type="submit" class="w-full bg-primary text-white py-3 !rounded-button whitespace-nowrap font-medium hover:bg-primary/90 transition-colors">
+Submit Repair Request
+</button>
+</form>
+</div>
+<div class="bg-gray-900 p-8 lg:p-12 text-white flex flex-col justify-center" style="background-image: url('https://readdy.ai/api/search-image?query=A%20close-up%20of%20a%20technician%20carefully%20repairing%20a%20smartphone%20with%20precision%20tools.%20The%20image%20shows%20detailed%20circuit%20boards%20and%20components%20with%20a%20dark%20background%20and%20dramatic%20lighting%20that%20highlights%20the%20repair%20process.%20The%20technician%20is%20wearing%20gloves%20and%20using%20magnification%20tools%2C%20creating%20a%20professional%20high-tech%20atmosphere%20with%20soft%20bokeh%20effects.&width=800&height=1000&seq=67890&orientation=portrait'); background-size: cover; background-position: center;">
+<div class="bg-black/60 p-8 rounded-lg backdrop-blur-sm">
+<h3 class="text-2xl font-bold mb-6">Expert Assessment & Quick Response</h3>
+<p class="mb-6">Due to the unique nature of each repair, our certified technicians will assess your device and provide an accurate quote tailored to your specific issue.</p>
+<div class="space-y-4 mb-8">
+<div class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center mr-3 mt-0.5 text-primary">
+<i class="ri-time-line"></i>
+</div>
+<div>
+<h4 class="font-semibold">During Store Hours</h4>
+<p class="text-gray-300">A technician will contact you within 15 minutes</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center mr-3 mt-0.5 text-primary">
+<i class="ri-calendar-line"></i>
+</div>
+<div>
+<h4 class="font-semibold">On Weekends</h4>
+<p class="text-gray-300">Response within 12 hours</p>
+</div>
+</div>
+</div>
+<h4 class="font-semibold text-lg mb-3">Average Completion Times:</h4>
+<ul class="space-y-2 mb-6">
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span>Screen repairs: 1-2 hours</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span>Battery replacement: 30-45 minutes</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span>Water damage: 24-48 hours</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span>General repairs: 1-3 hours</span>
+</li>
+</ul>
+<p class="text-sm text-gray-300">All repairs include a 90-day warranty on parts and labor. We use only premium quality components to ensure the longevity of your device.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div>
+<div class="flex items-center mb-4">
+<span class="text-2xl font-bold text-white">Mobile</span>
+<div class="relative">
+<span class="text-2xl font-bold text-red-500">Techs</span>
+<i class="ri-quill-pen-fill text-red-500 absolute -top-2 -right-4 transform rotate-45"></i>
+</div>
+</div>
+<p class="text-gray-400 mb-6">Professional device repair services with quality parts and expert technicians.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-facebook-fill text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-twitter-fill text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-instagram-line text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-youtube-fill text-white"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Services</h3>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Screen Repair</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Battery Replacement</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Water Damage Repair</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Charging Port Fix</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Camera Repair</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+<ul class="space-y-3">
+<li class="flex">
+<div class="w-5 h-5 flex items-center justify-center mr-3 mt-1 text-primary">
+<i class="ri-map-pin-line"></i>
+</div>
+<span class="text-gray-400">123 Repair Street, Tech City, TC 10101</span>
+</li>
+<li class="flex">
+<div class="w-5 h-5 flex items-center justify-center mr-3 mt-1 text-primary">
+<i class="ri-phone-line"></i>
+</div>
+<span class="text-gray-400">(555) 123-4567</span>
+</li>
+<li class="flex">
+<div class="w-5 h-5 flex items-center justify-center mr-3 mt-1 text-primary">
+<i class="ri-mail-line"></i>
+</div>
+<span class="text-gray-400">support@devicerepair.com</span>
+</li>
+</ul>
+<h3 class="text-lg font-semibold mt-6 mb-2">Business Hours</h3>
+<p class="text-gray-400">Monday-Friday: 9AM - 7PM</p>
+<p class="text-gray-400">Saturday: 10AM - 5PM</p>
+<p class="text-gray-400">Sunday: Closed</p>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Device Repair Services. All rights reserved.</p>
+<div class="flex space-x-6">
+<a href="#" class="text-gray-400 text-sm hover:text-white transition-colors">Privacy Policy</a>
+<a href="#" class="text-gray-400 text-sm hover:text-white transition-colors">Terms of Service</a>
+<a href="#" class="text-gray-400 text-sm hover:text-white transition-colors">Cookie Policy</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+const form = document.querySelector('form');
+const startRepairButton = document.querySelector('.hero-content button');
+const nameInput = document.getElementById('name');
+if (form) {
+form.addEventListener('submit', function(e) {
+e.preventDefault();
+alert('Your repair request has been submitted. A technician will contact you shortly!');
+form.reset();
+});
+}
+if (startRepairButton) {
+startRepairButton.addEventListener('click', function() {
+const repairSection = document.getElementById('repair-quote-section');
+if (repairSection) {
+repairSection.scrollIntoView({ behavior: 'smooth' });
+setTimeout(() => {
+if (nameInput) {
+nameInput.focus();
+}
+}, 800);
+}
+});
+}
+});
+</script>
 </body>
 </html>
