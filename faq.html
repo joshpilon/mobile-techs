@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FAQ | Mobile Techs - Your Trusted Mobile Technology Partner</title>
-  <meta name="description" content="Find answers to common tech repair, trade-in, and warranty questions at Mobile Techs." />
-  <meta property="og:title" content="FAQ | Mobile Techs" />
-  <meta property="og:description" content="Find answers to common tech repair, trade-in, and warranty questions." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://themobiletechs.com/faq" />
-  <meta property="og:image" content="https://themobiletechs.com/assets/og-image.jpg" />
-  <meta name="theme-color" content="#3b82f6" />
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find answers to common tech repair, trade-in, and warranty questions at Mobile Techs.">
+  <meta name="keywords" content="mobile repair, phone repair, Lewiston ID, device trade-in, warranty, mobile techs, FAQ">
+  <meta name="author" content="Mobile Techs">
+  <!-- OpenGraph Tags -->
+  <meta property="og:title" content="FAQ | Mobile Techs">
+  <meta property="og:description" content="Find answers to common tech repair, trade-in, and warranty questions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://themobiletechs.com/faq">
+  <meta property="og:image" content="https://themobiletechs.com/assets/og-image.jpg">
+  <!-- Mobile Tags -->
+  <meta name="theme-color" content="#3b82f6">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Favicon and Apple Touch Icons -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6TZ4QP1RBP"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -20,7 +27,8 @@
     gtag('js', new Date());
     gtag('config', 'G-6TZ4QP1RBP');
   </script>
-  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <title>FAQ | Mobile Techs - Your Trusted Mobile Technology Partner</title>
+  <script src="https://cdn.tailwindcss.com/3.4.14"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -45,11 +53,11 @@
       }
     }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
   <style>
     body { font-family: 'Inter', sans-serif; }
     .faq-item.active .faq-answer {
@@ -69,481 +77,504 @@
     input[type="search"]::-webkit-search-results-decoration {
       display: none;
     }
-    input[type="number"]::-webkit-inner-spin-button,
-    input[type="number"]::-webkit-outer-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
   </style>
 </head>
 <body class="bg-gray-50">
-  <body class="bg-gray-50">
-<header class="bg-white shadow-sm">
-  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-    <a href="/" class="flex items-center text-2xl font-bold">
-      <span class="text-primary">Mobile</span>
-      <span class="text-red-500 flex items-center">Techs
-        <i class="ri-quill-pen-line text-red-500 transform -rotate-90 ml-1 h-6 w-6 flex items-center justify-center"></i>
-      </span>
-    </a>
-    <nav class="hidden md:flex space-x-8">
-      <a href="/" class="text-gray-700 hover:text-primary font-medium">Home</a>
-      <a href="/fix.html" class="text-gray-700 hover:text-primary font-medium">Fix</a>
-      <a href="/buy.html" class="text-gray-700 hover:text-primary font-medium">Buy</a>
-      <a href="/sell.html" class="text-gray-700 hover:text-primary font-medium">Sell</a>
-      <a href="/about.html" class="text-gray-700 hover:text-primary font-medium">About</a>
-      <a href="/faq.html" class="text-primary font-medium border-b-2 border-primary">FAQ</a>
-    </nav>
-    <button class="md:hidden flex items-center justify-center w-10 h-10">
-      <i class="ri-menu-line text-gray-700 ri-lg"></i>
+  <!-- Chatbot Widget -->
+  <div id="chatbot-widget" class="fixed bottom-4 right-4 z-50">
+    <button id="chatbot-toggle" class="bg-primary text-white rounded-full p-4 shadow-lg hover:bg-primary/90 transition-colors" aria-label="Open chatbot">
+      <i class="ri-chat-3-line ri-xl"></i>
     </button>
   </div>
-</header>
-
-<section class="bg-primary/5 py-12">
-  <div class="container mx-auto px-4">
-    <div class="max-w-3xl mx-auto text-center">
-      <h1 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h1>
-      <p class="text-lg text-gray-600 mb-8">Find answers to common questions about our services, policies, and procedures.</p>
-      <div class="relative max-w-2xl mx-auto">
-        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-          <i class="ri-search-line text-gray-400"></i>
-        </div>
-        <input type="search" id="faqSearch" class="w-full pl-12 pr-4 py-4 border-none bg-white rounded-lg shadow-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="Search frequently asked questions...">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="py-16">
-  <div class="container mx-auto px-4">
-    <div class="max-w-4xl mx-auto">
-
-      <!-- FAQ Categories -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-        <button class="faq-category-btn bg-white hover:bg-primary/5 p-6 rounded-lg shadow-sm text-center transition-all active" data-category="all">
-          <div class="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
-            <i class="ri-question-answer-line ri-xl text-primary"></i>
-          </div>
-          <h3 class="text-lg font-semibold">All Questions</h3>
-          <p class="text-sm text-gray-500 mt-2">View all FAQs</p>
-        </button>
-        <button class="faq-category-btn bg-white hover:bg-primary/5 p-6 rounded-lg shadow-sm text-center transition-all" data-category="repair">
-          <div class="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
-            <i class="ri-tools-line ri-xl text-primary"></i>
-          </div>
-          <h3 class="text-lg font-semibold">Repair Services</h3>
-          <p class="text-sm text-gray-500 mt-2">Fixing your devices</p>
-        </button>
-        <button class="faq-category-btn bg-white hover:bg-primary/5 p-6 rounded-lg shadow-sm text-center transition-all" data-category="trade">
-          <div class="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
-            <i class="ri-exchange-line ri-xl text-primary"></i>
-          </div>
-          <h3 class="text-lg font-semibold">Device Trade-in</h3>
-          <p class="text-sm text-gray-500 mt-2">Selling your devices</p>
-        </button>
-        <button class="faq-category-btn bg-white hover:bg-primary/5 p-6 rounded-lg shadow-sm text-center transition-all" data-category="warranty">
-          <div class="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
-            <i class="ri-shield-check-line ri-xl text-primary"></i>
-          </div>
-          <h3 class="text-lg font-semibold">Warranty & Policies</h3>
-          <p class="text-sm text-gray-500 mt-2">Our guarantees</p>
-        </button>
-      </div>
-
-      <!-- Begin FAQ Container -->
-      <div id="faqContainer">
-        <!-- Repair Services -->
-        <div class="mb-8 faq-section" data-category="repair">
-          <h2 class="text-2xl font-bold mb-6 flex items-center">
-            <div class="w-10 h-10 mr-3 bg-primary/10 rounded-full flex items-center justify-center">
-              <i class="ri-tools-line text-primary"></i>
-            </div>
-            Repair Services
-          </h2>
-          <div class="space-y-4">
-
-            <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="repair">
-              <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50">
-                <span class="text-left font-medium">How long does a typical phone repair take?</span>
-                <div class="faq-icon w-6 h-6 flex items-center justify-center">
-                  <i class="ri-add-line text-primary"></i>
-                </div>
-              </button>
-              <div class="faq-answer px-6 text-gray-600">
-                <p>Most standard repairs like screen replacements, battery replacements, and charging port fixes are completed within 1–2 hours. More complex repairs might take up to 24 hours. We’ll always provide you with an estimated completion time when you drop off your device.</p>
-              </div>
-            </div>
-
-            <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="repair">
-              <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50">
-                <span class="text-left font-medium">Do you use original parts for repairs?</span>
-                <div class="faq-icon w-6 h-6 flex items-center justify-center">
-                  <i class="ri-add-line text-primary"></i>
-                </div>
-              </button>
-              <div class="faq-answer px-6 text-gray-600">
-                <p>We offer both original manufacturer parts and high-quality aftermarket parts. Original parts maintain your device’s warranty but are more expensive. Our aftermarket parts are thoroughly tested for quality and compatibility, and come with our own warranty. We’ll discuss your options and pricing before beginning any repair.</p>
-              </div>
-            </div>
-
-            <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="repair">
-              <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50">
-                <span class="text-left font-medium">What devices do you repair?</span>
-                <div class="faq-icon w-6 h-6 flex items-center justify-center">
-                  <i class="ri-add-line text-primary"></i>
-                </div>
-              </button>
-              <div class="faq-answer px-6 text-gray-600">
-                <p>We repair most smartphones, tablets, and smartwatches — including all iPhone, Samsung Galaxy, Google Pixel, and many other Android devices. We also service iPads, Samsung tablets, and Apple Watches.</p>
-                <ul class="list-disc pl-5 mt-2 space-y-1">
-                  <li>Gaming consoles (PlayStation, Xbox, Nintendo)</li>
-                  <li>Gaming controllers</li>
-                  <li>Laptops and computers</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="repair">
-              <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50">
-                <span class="text-left font-medium">Do I need to make an appointment for repairs?</span>
-                <div class="faq-icon w-6 h-6 flex items-center justify-center">
-                  <i class="ri-add-line text-primary"></i>
-                </div>
-              </button>
-              <div class="faq-answer px-6 text-gray-600">
-                <p>While walk-ins are welcome, we recommend scheduling an appointment to minimize wait time. You can book online, by phone, or in person. We often have same-day appointments available for common repairs.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <!-- Device Trade-in -->
-        <div class="mb-8 faq-section" data-category="trade">
-          <h2 class="text-2xl font-bold mb-6 flex items-center">
-            <div class="w-10 h-10 mr-3 bg-primary/10 rounded-full flex items-center justify-center">
-              <i class="ri-exchange-line text-primary"></i>
-            </div>
-            Device Trade-In
-          </h2>
-          <div class="space-y-4">
-
-            <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="trade">
-              <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50">
-                <span class="text-left font-medium">How do you determine the value of my device?</span>
-                <div class="faq-icon w-6 h-6 flex items-center justify-center">
-                  <i class="ri-add-line text-primary"></i>
-                </div>
-              </button>
-              <div class="faq-answer px-6 text-gray-600">
-                <p>We evaluate based on model, storage, condition, battery health, and market demand. We use diagnostic tools and offer fair pricing based on real-time market value.</p>
-              </div>
-            </div>
-
-            <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="trade">
-              <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50">
-                <span class="text-left font-medium">What should I do before trading in my device?</span>
-                <div class="faq-icon w-6 h-6 flex items-center justify-center">
-                  <i class="ri-add-line text-primary"></i>
-                </div>
-              </button>
-              <div class="faq-answer px-6 text-gray-600">
-                <ul class="list-disc pl-5 space-y-1">
-                  <li>Back up your data</li>
-                  <li>Sign out of accounts</li>
-                  <li>Turn off Find My iPhone / Google lock</li>
-                  <li>Remove SIM/SD cards</li>
-                  <li>Factory reset your device</li>
-                  <li>Clean it (optional)</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="trade">
-              <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50">
-                <span class="text-left font-medium">Do you accept damaged devices for trade-in?</span>
-                <div class="faq-icon w-6 h-6 flex items-center justify-center">
-                  <i class="ri-add-line text-primary"></i>
-                </div>
-              </button>
-              <div class="faq-answer px-6 text-gray-600">
-                <p>Yes, including cracked screens, battery issues, and water damage. We offer reduced but fair pricing for damaged items. We cannot accept devices that are:</p>
-                <ul class="list-disc pl-5 mt-2 space-y-1">
-                  <li>Reported lost or stolen</li>
-                  <li>Locked to an account (iCloud, Google)</li>
-                  <li>Have unrepairable motherboard damage</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="trade">
-              <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50">
-                <span class="text-left font-medium">How do I get paid for my trade-in?</span>
-                <div class="faq-icon w-6 h-6 flex items-center justify-center">
-                  <i class="ri-add-line text-primary"></i>
-                </div>
-              </button>
-              <div class="faq-answer px-6 text-gray-600">
-                <ul class="list-disc pl-5 space-y-1">
-                  <li>Venmo, Apple Pay, PayPal — instant</li>
-                  <li>Store credit (+10% bonus value)</li>
-                  <li>Zelle or direct deposit (may include fee)</li>
-                </ul>
-                <p class="mt-2">A valid ID is required for all trade-ins.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <!-- Warranty & Store Policies -->
-        <div class="mb-8 faq-section" data-category="warranty">
-          <h2 class="text-2xl font-bold mb-6 flex items-center">
-            <div class="w-10 h-10 mr-3 bg-primary/10 rounded-full flex items-center justify-center">
-              <i class="ri-shield-check-line text-primary"></i>
-            </div>
-            Warranty & Policies
-          </h2>
-          <div class="space-y-4">
-
-            <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="warranty">
-              <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50">
-                <span class="text-left font-medium">What warranty do you offer on repairs?</span>
-                <div class="faq-icon w-6 h-6 flex items-center justify-center">
-                  <i class="ri-add-line text-primary"></i>
-                </div>
-              </button>
-              <div class="faq-answer px-6 text-gray-600">
-                <p>All repairs include a 90-day warranty on parts and labor. It covers defects but not new physical/water damage or third-party tampering.</p>
-              </div>
-            </div>
-
-            <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="warranty">
-              <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50">
-                <span class="text-left font-medium">What warranty comes with refurbished devices?</span>
-                <div class="faq-icon w-6 h-6 flex items-center justify-center">
-                  <i class="ri-add-line text-primary"></i>
-                </div>
-              </button>
-              <div class="faq-answer px-6 text-gray-600">
-                <p>All certified pre-owned devices come with a 6-month warranty covering hardware functionality, battery performance, and key system components.</p>
-              </div>
-            </div>
-
-            <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="warranty">
-              <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50">
-                <span class="text-left font-medium">What is your return policy?</span>
-                <div class="faq-icon w-6 h-6 flex items-center justify-center">
-                  <i class="ri-add-line text-primary"></i>
-                </div>
-              </button>
-              <div class="faq-answer px-6 text-gray-600">
-                <ul class="list-disc pl-5 space-y-1">
-                  <li><strong>Refurbished Devices:</strong> 14-day return or exchange</li>
-                  <li><strong>Accessories:</strong> 30-day unopened / 14-day opened</li>
-                  <li><strong>Repairs:</strong> 7-day adjustment window if dissatisfied</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="warranty">
-              <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50">
-                <span class="text-left font-medium">How do you handle data privacy during repairs?</span>
-                <div class="faq-icon w-6 h-6 flex items-center justify-center">
-                  <i class="ri-add-line text-primary"></i>
-                </div>
-              </button>
-              <div class="faq-answer px-6 text-gray-600">
-                <p>We take privacy seriously. All technicians sign confidentiality agreements. We recommend you back up/erase data before drop-off. We never access your files unless needed for repair testing.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div> <!-- End #faqContainer -->
-
-    </div>
-  </div>
-</section>
-
-<!-- Contact Form Section -->
-<section class="py-16 bg-primary/5">
-  <div class="container mx-auto px-4">
-    <div class="max-w-3xl mx-auto">
-      <div class="text-center mb-10">
-        <h2 class="text-3xl font-bold mb-4">Can't find what you're looking for?</h2>
-        <p class="text-lg text-gray-600">We're here to help! Send us your question and we'll get back to you as soon as possible.</p>
-      </div>
-      <div class="bg-white rounded-lg shadow-sm p-8">
-        <form id="contactForm" class="space-y-6">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
-              <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary/20 transition" placeholder="John Smith">
-            </div>
-            <div>
-              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-              <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary/20 transition" placeholder="john@example.com">
-            </div>
-          </div>
-          <div>
-            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
-            <select id="subject" name="subject" class="w-full px-4 py-3 pr-8 rounded border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary/20 transition">
-              <option value="">Select a topic</option>
-              <option value="repair">Repair Question</option>
-              <option value="trade">Trade-in Question</option>
-              <option value="warranty">Warranty Question</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div>
-            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Question</label>
-            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary/20 transition" placeholder="Please provide as much detail as possible..."></textarea>
-          </div>
-          <div>
-            <button type="submit" class="bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-6 rounded-button shadow-lg hover:shadow-xl transition-all whitespace-nowrap">
-              Submit Question
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-gray-900 text-white py-12">
-  <div class="container mx-auto px-4">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-      <div>
-        <a href="/" class="flex items-center text-2xl font-bold mb-4">
-          <span class="text-white">Mobile</span><span class="text-red-500 flex items-center">Techs<i class="ri-quill-pen-line text-red-500 transform -rotate-90 ml-1 h-6 w-6 flex items-center justify-center"></i></span>
-        </a>
-        <p class="text-gray-400 mb-4">Your trusted partner for selling, buying, and repairing mobile devices since 2010.</p>
-      </div>
-      <div>
-        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-        <ul class="space-y-2">
-          <li><a href="/" class="text-gray-400 hover:text-white">Home</a></li>
-          <li><a href="/fix.html" class="text-gray-400 hover:text-white">Fix Your Device</a></li>
-          <li><a href="/buy.html" class="text-gray-400 hover:text-white">Buy Refurbished</a></li>
-          <li><a href="/sell.html" class="text-gray-400 hover:text-white">Sell Your Phone</a></li>
-          <li><a href="/about.html" class="text-gray-400 hover:text-white">About Us</a></li>
-          <li><a href="/faq.html" class="text-gray-400 hover:text-white">FAQ</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="text-lg font-semibold mb-4">Support</h4>
-        <ul class="space-y-2">
-          <li><a href="/contact.html" class="text-gray-400 hover:text-white">Contact Us</a></li>
-          <li><a href="/privacy.html" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
-          <li><a href="/terms.html" class="text-gray-400 hover:text-white">Terms of Service</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="text-lg font-semibold mb-4">Contact</h4>
-        <ul class="space-y-2 text-gray-400">
-          <li><i class="ri-map-pin-line mr-2"></i>824 21st St. Lewiston ID 83501</li>
-          <li><i class="ri-phone-line mr-2"></i>(208) 553-9875</li>
-          <li><i class="ri-mail-line mr-2"></i>support@themobiletechs.com</li>
-          <li><i class="ri-time-line mr-2"></i>Mon–Fri: 8AM–6PM, Sat: By Appointment</li>
-        </ul>
-      </div>
-    </div>
-    <div class="pt-8 border-t border-gray-800 text-center text-gray-500">
-      © 2025 Mobile Techs. All rights reserved.
-    </div>
-  </div>
-</footer>
-
-<!-- Chatbot -->
-<script>
-  (function() {
-    const chatIcon = document.createElement('div');
-    chatIcon.style.position = 'fixed';
-    chatIcon.style.bottom = '20px';
-    chatIcon.style.right = '20px';
-    chatIcon.style.zIndex = '1000';
-    chatIcon.innerHTML = '<div style="background:#3b82f6;padding:12px;border-radius:50%;box-shadow:0 2px 10px rgba(0,0,0,0.2);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-10 10c0 1.936.579 3.727 1.57 5.223L2 22l4.777-1.57A9.956 9.956 0 0 0 12 22a10 10 0 0 0 0-20z"/></svg></div>';
-    document.body.appendChild(chatIcon);
-    chatIcon.addEventListener('click', function() {
+  <script>
+    // Placeholder chatbot script (replace with your actual chatbot integration)
+    document.getElementById('chatbot-toggle').addEventListener('click', () => {
       alert('Hi there! How can we help you today?');
     });
-  })();
-</script>
+  </script>
 
-<!-- FAQ Functionality -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const faqQuestions = document.querySelectorAll('.faq-question');
-    faqQuestions.forEach(q => {
-      q.addEventListener('click', () => {
-        const faqItem = q.parentElement;
-        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
-        if (!faqItem.classList.contains('active')) faqItem.classList.add('active');
-      });
-    });
-    const categoryButtons = document.querySelectorAll('.faq-category-btn');
-    const faqItems = document.querySelectorAll('.faq-item');
-    const faqSections = document.querySelectorAll('.faq-section');
-    categoryButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const category = btn.getAttribute('data-category');
-        categoryButtons.forEach(b => b.classList.remove('active', 'bg-primary/5'));
-        btn.classList.add('active', 'bg-primary/5');
-        if (category === 'all') {
-          faqSections.forEach(s => s.style.display = 'block');
-          faqItems.forEach(i => i.style.display = 'block');
-        } else {
-          faqSections.forEach(s => s.style.display = s.getAttribute('data-category') === category ? 'block' : 'none');
-          faqItems.forEach(i => i.style.display = i.getAttribute('data-category') === category ? 'block' : 'none');
-        }
-      });
-    });
-    const searchInput = document.getElementById('faqSearch');
-    searchInput.addEventListener('input', () => {
-      const searchTerm = searchInput.value.toLowerCase().trim();
-      faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question span').textContent.toLowerCase();
-        const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
-        const match = question.includes(searchTerm) || answer.includes(searchTerm);
-        item.style.display = match ? 'block' : 'none';
-      });
-    });
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const btn = this.querySelector('button[type="submit"]');
-      btn.textContent = 'Submitting...';
-      btn.disabled = true;
-      setTimeout(() => {
-        alert('Thank you for your question!');
-        this.reset();
-        btn.textContent = 'Submit Question';
-        btn.disabled = false;
-      }, 1500);
-    });
-  });
-</script>
-</body>
-</html>
+  <!-- Header -->
+  <header class="bg-white shadow-sm">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="/" class="flex items-center text-2xl font-bold">
+        <span class="text-primary">Mobile</span>
+        <span class="text-red-500 flex items-center">Techs
+          <i class="ri-quill-pen-line text-red-500 transform -rotate-90 ml-1 h-6 w-6 flex items-center justify-center"></i>
+        </span>
+      </a>
+      <div class="flex items-center">
+        <button id="mobile-menu-toggle" class="md:hidden flex items-center justify-center w-10 h-10" aria-label="Toggle mobile menu">
+          <i class="ri-menu-line text-gray-700 ri-lg"></i>
+        </button>
+        <nav id="nav-menu" class="hidden md:flex space-x-8">
+          <a href="/" class="text-gray-700 hover:text-primary font-medium">Home</a>
+          <a href="/fix.html" class="text-gray-700 hover:text-primary font-medium">Fix</a>
+          <a href="/buy.html" class="text-gray-700 hover:text-primary font-medium">Buy</a>
+          <a href="/sell.html" class="text-gray-700 hover:text-primary font-medium">Sell</a>
+          <a href="/about.html" class="text-gray-700 hover:text-primary font-medium">About</a>
+          <a href="/faq.html" class="text-primary font-medium border-b-2 border-primary">FAQ</a>
+        </nav>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-sm">
+      <nav class="flex flex-col items-center py-4 space-y-4">
+        <a href="/" class="text-gray-700 hover:text-primary font-medium">Home</a>
+        <a href="/fix.html" class="text-gray-700 hover:text-primary font-medium">Fix</a>
+        <a href="/buy.html" class="text-gray-700 hover:text-primary font-medium">Buy</a>
+        <a href="/sell.html" class="text-gray-700 hover:text-primary font-medium">Sell</a>
+        <a href="/about.html" class="text-gray-700 hover:text-primary font-medium">About</a>
+        <a href="/faq.html" class="text-primary font-medium">FAQ</a>
+      </nav>
+    </div>
+  </header>
 
+  <!-- FAQ Hero Section -->
+  <section class="bg-primary/5 py-12">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h1 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h1>
+        <p class="text-lg text-gray-600 mb-8">Find answers to common questions about our services, policies, and procedures.</p>
+        <div class="relative max-w-2xl mx-auto">
+          <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+            <i class="ri-search-line text-gray-400"></i>
+          </div>
+          <input type="search" id="faqSearch" class="w-full pl-12 pr-4 py-4 border-none bg-white rounded-lg shadow-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="Search frequently asked questions..." aria-label="Search FAQs">
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- FAQ Content Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <!-- FAQ Categories -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <button class="faq-category-btn bg-white hover:bg-primary/5 p-6 rounded-lg shadow-sm text-center transition-all active" data-category="all" aria-label="View all FAQs">
+            <div class="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
+              <i class="ri-question-answer-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-lg font-semibold">All Questions</h3>
+            <p class="text-sm text-gray-500 mt-2">View all FAQs</p>
+          </button>
+          <button class="faq-category-btn bg-white hover:bg-primary/5 p-6 rounded-lg shadow-sm text-center transition-all" data-category="repair" aria-label="View Repair Services FAQs">
+            <div class="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
+              <i class="ri-tools-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-lg font-semibold">Repair Services</h3>
+            <p class="text-sm text-gray-500 mt-2">Fixing your devices</p>
+          </button>
+          <button class="faq-category-btn bg-white hover:bg-primary/5 p-6 rounded-lg shadow-sm text-center transition-all" data-category="trade" aria-label="View Device Trade-in FAQs">
+            <div class="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
+              <i class="ri-exchange-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-lg font-semibold">Device Trade-in</h3>
+            <p class="text-sm text-gray-500 mt-2">Selling your devices</p>
+          </button>
+          <button class="faq-category-btn bg-white hover:bg-primary/5 p-6 rounded-lg shadow-sm text-center transition-all" data-category="warranty" aria-label="View Warranty & Policies FAQs">
+            <div class="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
+              <i class="ri-shield-check-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-lg font-semibold">Warranty & Policies</h3>
+            <p class="text-sm text-gray-500 mt-2">Our guarantees</p>
+          </button>
+        </div>
 
+        <!-- FAQ Container -->
+        <div id="faqContainer">
+          <!-- Repair Services -->
+          <div class="mb-8 faq-section" data-category="repair">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+              <div class="w-10 h-10 mr-3 bg-primary/10 rounded-full flex items-center justify-center">
+                <i class="ri-tools-line text-primary"></i>
+              </div>
+              Repair Services
+            </h2>
+            <div class="space-y-4">
+              <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="repair">
+                <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50" aria-expanded="false">
+                  <span class="text-left font-medium">How long does a typical phone repair take?</span>
+                  <div class="faq-icon w-6 h-6 flex items-center justify-center">
+                    <i class="ri-add-line text-primary"></i>
+                  </div>
+                </button>
+                <div class="faq-answer px-6 text-gray-600">
+                  <p>Most standard repairs like screen replacements, battery replacements, and charging port fixes are completed within 1–2 hours. More complex repairs might take up to 24 hours. We’ll always provide you with an estimated completion time when you drop off your device.</p>
+                </div>
+              </div>
+              <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="repair">
+                <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50" aria-expanded="false">
+                  <span class="text-left font-medium">Do you use original parts for repairs?</span>
+                  <div class="faq-icon w-6 h-6 flex items-center justify-center">
+                    <i class="ri-add-line text-primary"></i>
+                  </div>
+                </button>
+                <div class="faq-answer px-6 text-gray-600">
+                  <p>We offer both original manufacturer parts and high-quality aftermarket parts. Original parts maintain your device’s warranty but are more expensive. Our aftermarket parts are thoroughly tested for quality and compatibility, and come with our own warranty. We’ll discuss your options and pricing before beginning any repair.</p>
+                </div>
+              </div>
+              <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="repair">
+                <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50" aria-expanded="false">
+                  <span class="text-left font-medium">What devices do you repair?</span>
+                  <div class="faq-icon w-6 h-6 flex items-center justify-center">
+                    <i class="ri-add-line text-primary"></i>
+                  </div>
+                </button>
+                <div class="faq-answer px-6 text-gray-600">
+                  <p>We repair most smartphones, tablets, and smartwatches — including all iPhone, Samsung Galaxy, Google Pixel, and many other Android devices. We also service iPads, Samsung tablets, and Apple Watches.</p>
+                  <ul class="list-disc pl-5 mt-2 space-y-1">
+                    <li>Gaming consoles (PlayStation, Xbox, Nintendo)</li>
+                    <li>Gaming controllers</li>
+                    <li>Laptops and computers</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="repair">
+                <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50" aria-expanded="false">
+                  <span class="text-left font-medium">Do I need to make an appointment for repairs?</span>
+                  <div class="faq-icon w-6 h-6 flex items-center justify-center">
+                    <i class="ri-add-line text-primary"></i>
+                  </div>
+                </button>
+                <div class="faq-answer px-6 text-gray-600">
+                  <p>While walk-ins are welcome, we recommend scheduling an appointment to minimize wait time. You can book online, by phone, or in person. We often have same-day appointments available for common repairs.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Device Trade-in -->
+          <div class="mb-8 faq-section" data-category="trade">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+              <div class="w-10 h-10 mr-3 bg-primary/10 rounded-full flex items-center justify-center">
+                <i class="ri-exchange-line text-primary"></i>
+              </div>
+              Device Trade-In
+            </h2>
+            <div class="space-y-4">
+              <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="trade">
+                <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50" aria-expanded="false">
+                  <span class="text-left font-medium">How do you determine the value of my device?</span>
+                  <div class="faq-icon w-6 h-6 flex items-center justify-center">
+                    <i class="ri-add-line text-primary"></i>
+                  </div>
+                </button>
+                <div class="faq-answer px-6 text-gray-600">
+                  <p>We evaluate based on model, storage, condition, battery health, and market demand. We use diagnostic tools and offer fair pricing based on real-time market value.</p>
+                </div>
+              </div>
+              <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="trade">
+                <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50" aria-expanded="false">
+                  <span class="text-left font-medium">What should I do before trading in my device?</span>
+                  <div class="faq-icon w-6 h-6 flex items-center justify-center">
+                    <i class="ri-add-line text-primary"></i>
+                  </div>
+                </button>
+                <div class="faq-answer px-6 text-gray-600">
+                  <ul class="list-disc pl-5 space-y-1">
+                    <li>Back up your data</li>
+                    <li>Sign out of accounts</li>
+                    <li>Turn off Find My iPhone / Google lock</li>
+                    <li>Remove SIM/SD cards</li>
+                    <li>Factory reset your device</li>
+                    <li>Clean it (optional)</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="trade">
+                <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50" aria-expanded="false">
+                  <span class="text-left font-medium">Do you accept damaged devices for trade-in?</span>
+                  <div class="faq-icon w-6 h-6 flex items-center justify-center">
+                    <i class="ri-add-line text-primary"></i>
+                  </div>
+                </button>
+                <div class="faq-answer px-6 text-gray-600">
+                  <p>Yes, including cracked screens, battery issues, and water damage. We offer reduced but fair pricing for damaged items. We cannot accept devices that are:</p>
+                  <ul class="list-disc pl-5 mt-2 space-y-1">
+                    <li>Reported lost or stolen</li>
+                    <li>Locked to an account (iCloud, Google)</li>
+                    <li>Have unrepairable motherboard damage</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="trade">
+                <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50" aria-expanded="false">
+                  <span class="text-left font-medium">How do I get paid for my trade-in?</span>
+                  <div class="faq-icon w-6 h-6 flex items-center justify-center">
+                    <i class="ri-add-line text-primary"></i>
+                  </div>
+                </button>
+                <div class="faq-answer px-6 text-gray-600">
+                  <ul class="list-disc pl-5 space-y-1">
+                    <li>Venmo, Apple Pay, PayPal — instant</li>
+                    <li>Store credit (+10% bonus value)</li>
+                    <li>Zelle or direct deposit (may include fee)</li>
+                  </ul>
+                  <p class="mt-2">A valid ID is required for all trade-ins.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Warranty & Store Policies -->
+          <div class="mb-8 faq-section" data-category="warranty">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+              <div class="w-10 h-10 mr-3 bg-primary/10 rounded-full flex items-center justify-center">
+                <i class="ri-shield-check-line text-primary"></i>
+              </div>
+              Warranty & Policies
+            </h2>
+            <div class="space-y-4">
+              <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="warranty">
+                <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50" aria-expanded="false">
+                  <span class="text-left font-medium">What warranty do you offer on repairs?</span>
+                  <div class="faq-icon w-6 h-6 flex items-center justify-center">
+                    <i class="ri-add-line text-primary"></i>
+                  </div>
+                </button>
+                <div class="faq-answer px-6 text-gray-600">
+                  <p>All repairs include a 90-day warranty on parts and labor. It covers defects but not new physical/water damage or third-party tampering.</p>
+                </div>
+              </div>
+              <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="warranty">
+                <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50" aria-expanded="false">
+                  <span class="text-left font-medium">What warranty comes with refurbished devices?</span>
+                  <div class="faq-icon w-6 h-6 flex items-center justify-center">
+                    <i class="ri-add-line text-primary"></i>
+                  </div>
+                </button>
+                <div class="faq-answer px-6 text-gray-600">
+                  <p>All certified pre-owned devices come with a 6-month warranty covering hardware functionality, battery performance, and key system components.</p>
+                </div>
+              </div>
+              <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="warranty">
+                <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50" aria-expanded="false">
+                  <span class="text-left font-medium">What is your return policy?</span>
+                  <div class="faq-icon w-6 h-6 flex items-center justify-center">
+                    <i class="ri-add-line text-primary"></i>
+                  </div>
+                </button>
+                <div class="faq-answer px-6 text-gray-600">
+                  <ul class="list-disc pl-5 space-y-1">
+                    <li><strong>Refurbished Devices:</strong> 14-day return or exchange</li>
+                    <li><strong>Accessories:</strong> 30-day unopened / 14-day opened</li>
+                    <li><strong>Repairs:</strong> 7-day adjustment window if dissatisfied</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="faq-item bg-white rounded-lg shadow-sm overflow-hidden" data-category="warranty">
+                <button class="faq-question w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50" aria-expanded="false">
+                  <span class="text-left font-medium">How do you handle data privacy during repairs?</span>
+                  <div class="faq-icon w-6 h-6 flex items-center justify-center">
+                    <i class="ri-add-line text-primary"></i>
+                  </div>
+                </button>
+                <div class="faq-answer px-6 text-gray-600">
+                  <p>We take privacy seriously. All technicians sign confidentiality agreements. We recommend you back up/erase data before drop-off. We never access your files unless needed for repair testing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- End #faqContainer -->
+      </div>
+    </div>
+  </section>
 
-  <!-- Chatbot widget -->
+  <!-- Contact Form Section -->
+  <section class="py-16 bg-primary/5">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl font-bold mb-4">Can't find what you're looking for?</h2>
+          <p class="text-lg text-gray-600">We're here to help! Send us your question and we'll get back to you as soon as possible.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-sm p-8">
+          <form id="contactForm" class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary/20 transition" placeholder="John Smith" required>
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary/20 transition" placeholder="john@example.com" required>
+              </div>
+            </div>
+            <div>
+              <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+              <select id="subject" name="subject" class="w-full px-4 py-3 pr-8 rounded border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary/20 transition" required>
+                <option value="">Select a topic</option>
+                <option value="repair">Repair Question</option>
+                <option value="trade">Trade-in Question</option>
+                <option value="warranty">Warranty Question</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Question</label>
+              <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary/20 transition" placeholder="Please provide as much detail as possible..." required></textarea>
+            </div>
+            <div>
+              <button type="submit" class="bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-6 rounded-button shadow-lg hover:shadow-xl transition-all whitespace-nowrap">
+                Submit Question
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <a href="/" class="flex items-center text-2xl font-bold mb-4">
+            <span class="text-white">Mobile</span><span class="text-red-500 flex items-center">Techs<i class="ri-quill-pen-line text-red-500 transform -rotate-90 ml-1 h-6 w-6 flex items-center justify-center"></i></span>
+          </a>
+          <p class="text-gray-400 mb-4">Your trusted partner for selling, buying, and repairing mobile devices since 2010.</p>
+          <div class="flex space-x-4">
+            <a href="https://facebook.com/mobiletechs" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+              <i class="ri-facebook-fill text-white"></i>
+            </a>
+            <a href="https://twitter.com/mobiletechs" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+              <i class="ri-twitter-x-fill text-white"></i>
+            </a>
+            <a href="https://instagram.com/mobiletechs" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+              <i class="ri-instagram-fill text-white"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="/" class="text-gray-400 hover:text-white">Home</a></li>
+            <li><a href="/fix.html" class="text-gray-400 hover:text-white">Fix Your Device</a></li>
+            <li><a href="/buy.html" class="text-gray-400 hover:text-white">Buy Refurbished</a></li>
+            <li><a href="/sell.html" class="text-gray-400 hover:text-white">Sell Your Phone</a></li>
+            <li><a href="/about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+            <li><a href="/faq.html" class="text-gray-400 hover:text-white">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Support</h4>
+          <ul class="space-y-2">
+            <li><a href="/contact.html" class="text-gray-400 hover:text-white">Contact Us</a></li>
+            <li><a href="/privacy.html" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+            <li><a href="/terms.html" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Contact</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li class="flex items-start"><i class="ri-map-pin-line mr-2 mt-1"></i>824 21st St. Lewiston ID 83501</li>
+            <li class="flex items-start"><i class="ri-phone-line mr-2 mt-1"></i>(208) 553-9875</li>
+            <li class="flex items-start"><i class="ri-mail-line mr-2 mt-1"></i>support@themobiletechs.com</li>
+            <li class="flex items-start"><i class="ri-time-line mr-2 mt-1"></i>Mon–Fri: 8AM–6PM, Sat: By Appointment</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-500 mb-4 md:mb-0">© 2025 Mobile Techs. All rights reserved.</p>
+        <div class="flex items-center space-x-4">
+          <i class="ri-visa-fill text-gray-400 ri-xl"></i>
+          <i class="ri-mastercard-fill text-gray-400 ri-xl"></i>
+          <i class="ri-paypal-fill text-gray-400 ri-xl"></i>
+          <i class="ri-apple-fill text-gray-400 ri-xl"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Functionality -->
   <script>
-    (function() {
-      const chatIcon = document.createElement('div');
-      chatIcon.style.position = 'fixed';
-      chatIcon.style.bottom = '20px';
-      chatIcon.style.right = '20px';
-      chatIcon.style.zIndex = '1000';
-      chatIcon.innerHTML = '<div style="background:#3b82f6;padding:12px;border-radius:50%;box-shadow:0 2px 10px rgba(0,0,0,0.2);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-10 10c0 1.936.579 3.727 1.57 5.223L2 22l4.777-1.57A9.956 9.956 0 0 0 12 22a10 10 0 0 0 0-20z"/></svg></div>';
-      document.body.appendChild(chatIcon);
-      chatIcon.addEventListener('click', function() {
-        alert('Hi there! How can we help you today?');
+    document.addEventListener('DOMContentLoaded', function() {
+      // Mobile menu toggle
+      const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
       });
-    })();
+
+      // FAQ accordion
+      const faqQuestions = document.querySelectorAll('.faq-question');
+      faqQuestions.forEach(q => {
+        q.addEventListener('click', () => {
+          const faqItem = q.parentElement;
+          const isActive = faqItem.classList.contains('active');
+          document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+          if (!isActive) {
+            faqItem.classList.add('active');
+            q.setAttribute('aria-expanded', 'true');
+          } else {
+            q.setAttribute('aria-expanded', 'false');
+          }
+        });
+      });
+
+      // FAQ category filter
+      const categoryButtons = document.querySelectorAll('.faq-category-btn');
+      const faqItems = document.querySelectorAll('.faq-item');
+      const faqSections = document.querySelectorAll('.faq-section');
+      categoryButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const category = btn.getAttribute('data-category');
+          categoryButtons.forEach(b => b.classList.remove('active', 'bg-primary/5'));
+          btn.classList.add('active', 'bg-primary/5');
+          if (category === 'all') {
+            faqSections.forEach(s => s.style.display = 'block');
+            faqItems.forEach(i => i.style.display = 'block');
+          } else {
+            faqSections.forEach(s => {
+              s.style.display = s.getAttribute('data-category') === category ? 'block' : 'none';
+            });
+            faqItems.forEach(i => i.style.display = i.getAttribute('data-category') === category ? 'block' : 'none');
+          }
+        });
+      });
+
+      // FAQ search
+      const searchInput = document.getElementById('faqSearch');
+      searchInput.addEventListener('input', () => {
+        const searchTerm = searchInput.value.toLowerCase().trim();
+        const visibleCategories = new Set();
+        faqItems.forEach(item => {
+          const question = item.querySelector('.faq-question span').textContent.toLowerCase();
+          const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+          const match = question.includes(searchTerm) || answer.includes(searchTerm);
+          item.style.display = match ? 'block' : 'none';
+          if (match) {
+            visibleCategories.add(item.getAttribute('data-category'));
+          }
+        });
+        faqSections.forEach(section => {
+          section.style.display = visibleCategories.has(section.getAttribute('data-category')) || searchTerm === '' ? 'block' : 'none';
+        });
+      });
+
+      // Contact form validation and submission
+      const contactForm = document.getElementById('contactForm');
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value.trim();
+        if (!name || !email || !subject || !message) {
+          alert('Please fill out all required fields.');
+          return;
+        }
+        const btn = this.querySelector('button[type="submit"]');
+        btn.textContent = 'Submitting...';
+        btn.disabled = true;
+        setTimeout(() => {
+          alert('Thank you for your question!');
+          contactForm.reset();
+          btn.textContent = 'Submit Question';
+          btn.disabled = false;
+        }, 1500);
+      });
+    });
   </script>
 </body>
 </html>
