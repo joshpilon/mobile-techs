@@ -1,552 +1,651 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sell your phone for cash at Mobile Techs in Lewiston, ID. Get quick quotes and instant payments for devices in any condition.">
+  <meta name="keywords" content="sell phone, phone recycling, Lewiston ID, mobile techs, iPhone, Samsung, Google Pixel">
+  <meta name="author" content="Mobile Techs">
+  <!-- OpenGraph Tags -->
+  <meta property="og:title" content="Sell Your Phone | Mobile Techs">
+  <meta property="og:description" content="Get the best value for your device with our quick, fair, and hassle-free process.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://themobiletechs.com/sell">
+  <meta property="og:image" content="https://themobiletechs.com/assets/og-image.jpg">
+  <!-- Mobile Tags -->
+  <meta name="theme-color" content="#3b82f6">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Favicon and Apple Touch Icons -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <!-- Google Analytics -->
-  <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6TZ4QP1RBP"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'G-6TZ4QP1RBP');
-    </script>
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us | Mobile Techs - Your Trusted Mobile Technology Partner</title>
-    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: '#3b82f6',
-              secondary: '#f59e0b'
-            },
-            borderRadius: {
-              none: '0px',
-              sm: '4px',
-              DEFAULT: '8px',
-              md: '12px',
-              lg: '16px',
-              xl: '20px',
-              '2xl': '24px',
-              '3xl': '32px',
-              full: '9999px',
-              button: '8px'
-            }
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6TZ4QP1RBP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6TZ4QP1RBP');
+  </script>
+  <title>Sell Your Phone | Mobile Techs</title>
+  <script src="https://cdn.tailwindcss.com/3.4.14"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3b82f6',
+            secondary: '#10b981'
+          },
+          borderRadius: {
+            'none': '0px',
+            'sm': '4px',
+            DEFAULT: '8px',
+            'md': '12px',
+            'lg': '16px',
+            'xl': '20px',
+            '2xl': '24px',
+            '3xl': '32px',
+            'full': '9999px',
+            'button': '8px'
           }
         }
-      };
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
-    <style>
-      :where([class^="ri-"])::before {
-        content: "\f3c2";
       }
-      body {
-        font-family: 'Poppins', sans-serif;
-      }
-      .hero-section {
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url('https://readdy.ai/api/search-image?query=A%2520professional%2520team%2520of%2520diverse%2520mobile%2520phone%2520technicians%2520working%2520in%2520a%2520modern%2520repair%2520shop%2520with%2520high-tech%2520equipment.%2520The%2520space%2520is%2520bright%2520and%2520well-organized%2520with%2520workstations%2520featuring%2520specialized%2520tools%2520for%2520phone%2520repair.%2520Team%2520members%2520are%2520dressed%2520in%2520company%2520uniforms%2520and%2520appear%2520engaged%2520in%2520various%2520aspects%2520of%2520phone%2520repair%2520and%2520customer%2520service.%2520The%2520atmosphere%2520conveys%2520professionalism%2C%2520expertise%2C%2520and%2520teamwork.&width=1920&height=800&seq=12346&orientation=landscape');
-        background-size: cover;
-        background-position: center;
-      }
-      .team-member:hover .social-links {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .social-links {
-        opacity: 0;
-        transform: translateY(10px);
-        transition: all 0.3s ease;
-      }
-      .counter-value {
-        transition: all 0.5s ease;
-      }
-      .testimonial-slider {
-        scroll-behavior: smooth;
-      }
-      input[type='number']::-webkit-inner-spin-button,
-      input[type='number']::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-      }
-    </style>
-  </head>
-  <body class="bg-gray-50">
-    <!-- Header -->
-    <header class="w-full py-4 px-6 bg-white shadow-sm">
-      <div class="max-w-7xl mx-auto flex justify-between items-center">
-        <!-- Logo Structure -->
-        <div class="flex items-center">
-          <span class="text-2xl font-bold text-primary">Mobile</span>
-          <div class="relative">
-            <span class="text-2xl font-bold text-red-500">Techs</span>
-            <i class="ri-quill-pen-fill text-red-500 absolute -top-2 -right-4 transform rotate-45"></i>
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .hero-section {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3');
+      background-size: cover;
+      background-position: center;
+    }
+    .custom-radio input[type="radio"] {
+      display: none;
+    }
+    .custom-radio label {
+      cursor: pointer;
+      padding: 8px;
+      border: 2px solid #d1d5db;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+    .custom-radio input[type="radio"]:checked + label {
+      border-color: #3b82f6;
+      background-color: #3b82f6;
+      color: white;
+    }
+    .custom-switch {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 20px;
+    }
+    .custom-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: 0.4s;
+      border-radius: 20px;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 2px;
+      bottom: 2px;
+      background-color: white;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+    input:checked + .slider {
+      background-color: #3b82f6;
+    }
+    input:checked + .slider:before {
+      transform: translateX(20px);
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Chatbot Widget -->
+  <div id="chatbot-widget" class="fixed bottom-4 right-4 z-50">
+    <button id="chatbot-toggle" class="bg-primary text-white rounded-full p-4 shadow-lg hover:bg-primary/90 transition-colors" aria-label="Open sell form">
+      <i class="ri-chat-3-line ri-xl"></i>
+    </button>
+  </div>
+
+  <!-- Sell Form Modal -->
+  <div id="sellFormModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-lg w-full max-w-md mx-4 overflow-hidden shadow-xl">
+      <div class="flex items-center justify-between bg-primary text-white px-6 py-4">
+        <h3 class="text-xl font-semibold">Sell Your Phone</h3>
+        <button id="closeModalBtn" class="w-8 h-8 flex items-center justify-center text-white hover:bg-primary-dark rounded-full" aria-label="Close modal">
+          <i class="ri-close-line ri-lg"></i>
+        </button>
+      </div>
+      <div class="p-6 max-h-[500px] overflow-y-auto">
+        <p class="text-gray-700 mb-4">Welcome! Let's get you a quote for your phone. Please fill in the details below:</p>
+        <form id="sellForm" class="space-y-4">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="Enter your full name" required>
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="Enter your email" required>
+          </div>
+          <div>
+            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="Enter your phone number" required>
+          </div>
+          <div>
+            <label for="brand" class="block text-sm font-medium text-gray-700 mb-1">Phone Brand</label>
+            <div class="relative">
+              <select id="brand" name="brand" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none appearance-none pr-8" required>
+                <option value="" disabled selected>Select brand</option>
+                <option value="apple">Apple</option>
+                <option value="samsung">Samsung</option>
+                <option value="google">Google</option>
+                <option value="oneplus">OnePlus</option>
+                <option value="xiaomi">Xiaomi</option>
+                <option value="other">Other</option>
+              </select>
+              <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                <i class="ri-arrow-down-s-line text-gray-400"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <label for="model" class="block text-sm font-medium text-gray-700 mb-1">Phone Model</label>
+            <div class="relative">
+              <select id="model" name="model" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none appearance-none pr-8" required disabled>
+                <option value="" disabled selected>Select model (choose brand first)</option>
+              </select>
+              <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                <i class="ri-arrow-down-s-line text-gray-400"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Device Condition</label>
+            <div class="grid grid-cols-2 gap-2 custom-radio">
+              <input type="radio" id="condition-perfect" name="condition" value="perfect" required>
+              <label for="condition-perfect" class="text-center">Perfect</label>
+              <input type="radio" id="condition-good" name="condition" value="good">
+              <label for="condition-good" class="text-center">Good</label>
+              <input type="radio" id="condition-fair" name="condition" value="fair">
+              <label for="condition-fair" class="text-center">Fair</label>
+              <input type="radio" id="condition-damaged" name="condition" value="damaged">
+              <label for="condition-damaged" class="text-center">Damaged</label>
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Carrier Lock Status</label>
+            <div class="flex items-center">
+              <label class="custom-switch mr-3">
+                <input type="checkbox" id="unlocked" name="unlocked">
+                <span class="slider"></span>
+              </label>
+              <span id="lockStatus" class="text-sm text-gray-700">Locked to carrier</span>
+            </div>
+          </div>
+          <div class="pt-4">
+            <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-4 !rounded-button shadow transition-all whitespace-nowrap">Get My Quote</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="w-full bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="/" class="text-2xl font-bold flex items-center gap-0">
+        <span class="text-primary">Mobile</span>
+        <span class="text-red-500 flex items-center">Techs
+          <i class="ri-quill-pen-line text-red-500 transform -rotate-90 ml-1 h-6 w-6 flex items-center justify-center"></i>
+        </span>
+      </a>
+      <div class="flex items-center">
+        <button id="mobile-menu-toggle" class="md:hidden w-10 h-10 flex items-center justify-center text-gray-600" aria-label="Toggle mobile menu">
+          <i class="ri-menu-line ri-lg"></i>
+        </button>
+        <nav id="nav-menu" class="hidden md:flex space-x-8">
+          <a href="/index.html" class="text-gray-700 hover:text-primary font-medium">Home</a>
+          <a href="/fix.html" class="text-gray-700 hover:text-primary font-medium">Fix</a>
+          <a href="/buy.html" class="text-gray-700 hover:text-primary font-medium">Buy</a>
+          <a href="/sell.html" class="text-primary font-medium border-b-2 border-primary">Sell</a>
+          <a href="/about.html" class="text-gray-700 hover:text-primary font-medium">About</a>
+          <a href="/faq.html" class="text-gray-700 hover:text-primary font-medium">FAQ</a>
+        </nav>
+        <div class="hidden md:flex items-center space-x-4 ml-8">
+          <button class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary" aria-label="Search">
+            <i class="ri-search-line ri-lg"></i>
+          </button>
+          <button class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary" aria-label="Cart">
+            <i class="ri-shopping-cart-line ri-lg"></i>
+          </button>
+          <button class="bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap">Sign In</button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-sm">
+      <nav class="flex flex-col items-center py-4 space-y-4">
+        <a href="/index.html" class="text-gray-700 hover:text-primary font-medium">Home</a>
+        <a href="/fix.html" class="text-gray-700 hover:text-primary font-medium">Fix</a>
+        <a href="/buy.html" class="text-gray-700 hover:text-primary font-medium">Buy</a>
+        <a href="/sell.html" class="text-primary font-medium">Sell</a>
+        <a href="/about.html" class="text-gray-700 hover:text-primary font-medium">About</a>
+        <a href="/faq.html" class="text-gray-700 hover:text-primary font-medium">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section py-20 text-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-xl">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Sell Your Phone for Cash Today</h1>
+        <p class="text-lg mb-8">Get the best value for your device with our quick, fair, and hassle-free process. We accept phones in any condition.</p>
+        <button id="openSellFormBtn" class="bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-8 text-lg !rounded-button shadow-lg hover:shadow-xl transition-all whitespace-nowrap">Sell My Phone</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Proposition -->
+  <section class="bg-white py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 rounded p-8 text-center shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
+            <i class="ri-time-line ri-xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Quick Payment Process</h3>
+          <p class="text-gray-600">Get paid instantly when you drop off your device at our store. No waiting periods.</p>
+        </div>
+        <div class="bg-gray-50 rounded p-8 text-center shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
+            <i class="ri-shield-check-line ri-xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Fair Price Promise</h3>
+          <p class="text-gray-600">We offer competitive prices based on current market value and device condition.</p>
+        </div>
+        <div class="bg-gray-50 rounded p-8 text-center shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
+            <i class="ri-smartphone-line ri-xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Accept Damaged Devices</h3>
+          <p class="text-gray-600">Cracked screen? Water damage? No problem. We'll still offer you a fair price.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Timeline -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
+      <div class="relative">
+        <div class="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-gray-200 -translate-y-1/2"></div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+          <div class="bg-white rounded-lg p-6 text-center shadow-sm relative z-10">
+            <div class="w-14 h-14 mx-auto mb-4 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">1</div>
+            <h3 class="text-xl font-semibold mb-2">Submit Details</h3>
+            <p class="text-gray-600">Tell us about your device using our simple form.</p>
+          </div>
+          <div class="bg-white rounded-lg p-6 text-center shadow-sm relative z-10">
+            <div class="w-14 h-14 mx-auto mb-4 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">2</div>
+            <h3 class="text-xl font-semibold mb-2">Get Quote</h3>
+            <p class="text-gray-600">Receive an accurate estimate within 15 minutes.</p>
+          </div>
+          <div class="bg-white rounded-lg p-6 text-center shadow-sm relative z-10">
+            <div class="w-14 h-14 mx-auto mb-4 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">3</div>
+            <h3 class="text-xl font-semibold mb-2">Visit Store</h3>
+            <p class="text-gray-600">Bring your device to our nearest location for verification.</p>
+          </div>
+          <div class="bg-white rounded-lg p-6 text-center shadow-sm relative z-10">
+            <div class="w-14 h-14 mx-auto mb-4 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">4</div>
+            <h3 class="text-xl font-semibold mb-2">Receive Payment</h3>
+            <p class="text-gray-600">Get paid instantly via Venmo, Apple Pay, Zelle, or store credit.</p>
           </div>
         </div>
-        <!-- End Logo Structure -->
-        <div class="flex items-center">
-          <nav class="hidden md:flex space-x-6">
-            <a href="index.html" class="text-gray-700 hover:text-primary font-medium">Home</a>
-            <a href="fix.html" class="text-gray-700 hover:text-primary font-medium">Fix</a>
-            <a href="buy.html" class="text-gray-700 hover:text-primary font-medium">Buy</a>
-            <a href="sell.html" class="text-gray-700 hover:text-primary font-medium">Sell</a>
-            <a href="about.html" class="text-primary font-medium">About</a>
-            <a href="faq.html" class="text-gray-700 hover:text-primary font-medium">FAQ</a>
-          </nav>
-<button class="md:hidden flex items-center justify-center w-10 h-10">
-<i class="ri-menu-line text-gray-700 ri-lg"></i>
-</button>
-</div>
-</header>
-<!-- Hero Section -->
-<section class="hero-section py-20">
-<div class="container mx-auto px-4 w-full">
-<div class="max-w-xl">
-<h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Sell Your Phone for Cash Today</h1>
-<p class="text-lg text-gray-700 mb-8">Get the best value for your device with our quick, fair, and hassle-free process. We accept phones in any condition.</p>
-<button id="sellButton" class="bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-8 text-lg !rounded-button shadow-lg hover:shadow-xl transition-all whitespace-nowrap">
-Sell My Phone
-</button>
-</div>
-</div>
-</section>
-<!-- Value Proposition -->
-<section class="bg-white py-16">
-<div class="container mx-auto px-4">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="bg-gray-50 rounded p-8 text-center shadow-sm hover:shadow-md transition-shadow">
-<div class="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
-<i class="ri-time-line ri-xl text-primary"></i>
-</div>
-<h3 class="text-xl font-semibold mb-2">Quick Payment Process</h3>
-<p class="text-gray-600">Get paid instantly when you drop off your device at our store. No waiting periods.</p>
-</div>
-<div class="bg-gray-50 rounded p-8 text-center shadow-sm hover:shadow-md transition-shadow">
-<div class="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
-<i class="ri-shield-check-line ri-xl text-primary"></i>
-</div>
-<h3 class="text-xl font-semibold mb-2">Fair Price Promise</h3>
-<p class="text-gray-600">We offer competitive prices based on current market value and device condition.</p>
-</div>
-<div class="bg-gray-50 rounded p-8 text-center shadow-sm hover:shadow-md transition-shadow">
-<div class="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
-<i class="ri-smartphone-line ri-xl text-primary"></i>
-</div>
-<h3 class="text-xl font-semibold mb-2">Accept Damaged Devices</h3>
-<p class="text-gray-600">Cracked screen? Water damage? No problem. We'll still offer you a fair price.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Process Timeline -->
-<section class="py-16 bg-gray-50">
-<div class="container mx-auto px-4">
-<h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
-<div class="relative">
-<div class="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-gray-200 -translate-y-1/2"></div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
-<div class="bg-white rounded-lg p-6 text-center shadow-sm relative z-10">
-<div class="w-14 h-14 mx-auto mb-4 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">1</div>
-<h3 class="text-xl font-semibold mb-2">Submit Details</h3>
-<p class="text-gray-600">Tell us about your device using our simple form.</p>
-</div>
-<div class="bg-white rounded-lg p-6 text-center shadow-sm relative z-10">
-<div class="w-14 h-14 mx-auto mb-4 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">2</div>
-<h3 class="text-xl font-semibold mb-2">Get Quote</h3>
-<p class="text-gray-600">Receive an accurate estimate within 15 minutes.</p>
-</div>
-<div class="bg-white rounded-lg p-6 text-center shadow-sm relative z-10">
-<div class="w-14 h-14 mx-auto mb-4 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">3</div>
-<h3 class="text-xl font-semibold mb-2">Visit Store</h3>
-<p class="text-gray-600">Bring your device to our nearest location for verification.</p>
-</div>
-<div class="bg-white rounded-lg p-6 text-center shadow-sm relative z-10">
-<div class="w-14 h-14 mx-auto mb-4 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">4</div>
-<h3 class="text-xl font-semibold mb-2">Receive Payment</h3>
-<p class="text-gray-600">Get paid instantly via Venmo, Apple Pay, Zelle, or store credit.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Store Locations -->
-<section class="py-16 bg-white">
-<div class="container mx-auto px-4">
-<h2 class="text-3xl font-bold text-center mb-12">Our Store Locations</h2>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-<div class="h-96 rounded-lg overflow-hidden shadow-md" style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png'); background-size: cover; background-position: center;"></div>
-<div class="bg-gray-50 rounded-lg p-8 shadow-sm">
-<h3 class="text-2xl font-semibold mb-6">Find Us Nearby</h3>
-<div class="space-y-6">
-<div class="flex items-start">
-<div class="w-10 h-10 flex items-center justify-center mr-4">
-<i class="ri-map-pin-line ri-lg text-primary"></i>
-</div>
-<div>
-<h4 class="font-semibold text-lg">The Mobile Techs</h4>
-<p class="text-gray-600">824 21st Street, Lewiston, ID 83501</p>
-<p class="text-gray-600">Mon-Fri: 8AM-6PM, Sat: By Appointment</p>
-</div>
-</div>
-</div>
-<div class="mt-8 pt-6 border-t border-gray-200 space-y-4">
-<div class="flex items-center">
-<div class="w-10 h-10 flex items-center justify-center mr-4">
-<i class="ri-phone-line ri-lg text-primary"></i>
-</div>
-<div>
-<p class="text-gray-600">Call us: <span class="font-semibold">+1 (208) 553-9875</span></p>
-</div>
-</div>
-<div class="flex items-center">
-<div class="w-10 h-10 flex items-center justify-center mr-4">
-<i class="ri-mail-line ri-lg text-primary"></i>
-</div>
-<div>
-<p class="text-gray-600">Email: <span class="font-semibold">support@themobiletechs.com</span></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Trust Elements -->
-<section class="py-16 bg-gray-50">
-<div class="container mx-auto px-4">
-<h2 class="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-<div class="bg-white rounded-lg p-8 shadow-sm">
-<div class="flex items-center mb-6">
-<div class="w-12 h-12 flex items-center justify-center mr-4 bg-primary/10 rounded-full">
-<i class="ri-customer-service-2-line ri-lg text-primary"></i>
-</div>
-<h3 class="text-xl font-semibold">Expert Service</h3>
-</div>
-<p class="text-gray-600">Our team of certified technicians will assess your device accurately and provide the best possible value.</p>
-</div>
-<div class="bg-white rounded-lg p-8 shadow-sm">
-<div class="flex items-center mb-6">
-<div class="w-12 h-12 flex items-center justify-center mr-4 bg-primary/10 rounded-full">
-<i class="ri-secure-payment-line ri-lg text-primary"></i>
-</div>
-<h3 class="text-xl font-semibold">Secure Process</h3>
-</div>
-<p class="text-gray-600">We ensure your data is completely erased and your personal information is protected throughout the entire process.</p>
-</div>
-<div class="bg-white rounded-lg p-8 shadow-sm">
-<div class="flex items-center mb-6">
-<div class="w-12 h-12 flex items-center justify-center mr-4 bg-primary/10 rounded-full">
-<i class="ri-price-tag-3-line ri-lg text-primary"></i>
-</div>
-<h3 class="text-xl font-semibold">Best Value</h3>
-</div>
-<p class="text-gray-600">We regularly monitor market prices to ensure we offer the most competitive rates for your devices.</p>
-</div>
-<div class="bg-white rounded-lg p-8 shadow-sm">
-<div class="flex items-center mb-6">
-<div class="w-12 h-12 flex items-center justify-center mr-4 bg-primary/10 rounded-full">
-<i class="ri-recycle-line ri-lg text-primary"></i>
-</div>
-<h3 class="text-xl font-semibold">Eco-Friendly</h3>
-</div>
-<p class="text-gray-600">By selling your device to us, you're contributing to electronics recycling and reducing e-waste.</p>
-</div>
-</div>
-<div class="bg-white rounded-lg p-8 shadow-sm">
-<h3 class="text-2xl font-semibold text-center mb-8">Customer Reviews</h3>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<div class="border border-gray-100 rounded-lg p-6">
-<div class="flex items-center mb-4">
-<div class="text-yellow-400 flex">
-<i class="ri-star-fill"></i>
-<i class="ri-star-fill"></i>
-<i class="ri-star-fill"></i>
-<i class="ri-star-fill"></i>
-<i class="ri-star-fill"></i>
-</div>
-<span class="ml-2 text-gray-600">5.0</span>
-</div>
-<p class="text-gray-700 mb-4">"I was amazed at how simple the process was. Brought in my old iPhone with a cracked screen and got cash within minutes!"</p>
-<div class="flex items-center">
-<span class="font-medium">Michael Thompson</span>
-<span class="mx-2 text-gray-400">•</span>
-<span class="text-gray-500">May 10, 2025</span>
-</div>
-</div>
-<div class="border border-gray-100 rounded-lg p-6">
-<div class="flex items-center mb-4">
-<div class="text-yellow-400 flex">
-<i class="ri-star-fill"></i>
-<i class="ri-star-fill"></i>
-<i class="ri-star-fill"></i>
-<i class="ri-star-fill"></i>
-<i class="ri-star-fill"></i>
-</div>
-<span class="ml-2 text-gray-600">5.0</span>
-</div>
-<p class="text-gray-700 mb-4">"They offered me $50 more than another store for my Samsung. The staff was friendly and the payment was instant."</p>
-<div class="flex items-center">
-<span class="font-medium">Rebecca Williams</span>
-<span class="mx-2 text-gray-400">•</span>
-<span class="text-gray-500">May 2, 2025</span>
-</div>
-</div>
-<div class="border border-gray-100 rounded-lg p-6">
-<div class="flex items-center mb-4">
-<div class="text-yellow-400 flex">
-<i class="ri-star-fill"></i>
-<i class="ri-star-fill"></i>
-<i class="ri-star-fill"></i>
-<i class="ri-star-fill"></i>
-<i class="ri-star-half-fill"></i>
-</div>
-<span class="ml-2 text-gray-600">4.5</span>
-</div>
-<p class="text-gray-700 mb-4">"Great experience selling my water-damaged Pixel. I thought it was worthless, but they still gave me a fair price for it."</p>
-<div class="flex items-center">
-<span class="font-medium">Daniel Rodriguez</span>
-<span class="mx-2 text-gray-400">•</span>
-<span class="text-gray-500">April 28, 2025</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<footer class="bg-gray-900 text-white py-12">
-<div class="container mx-auto px-4">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-<div>
-<a href="#" class="flex items-center text-2xl font-bold mb-4">
-<span class="text-white">Mobile</span><span class="text-red-500 flex items-center">Techs<i class="ri-quill-pen-line text-red-500 transform -rotate-90 ml-1 h-6 w-6 flex items-center justify-center"></i></span>
-</a>
-<p class="text-gray-400 mb-4">Your trusted partner for selling, buying, and repairing mobile devices since 2010.</p>
-<div class="flex space-x-4">
-<a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
-<i class="ri-facebook-fill text-white"></i>
-</a>
-<a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
-<i class="ri-twitter-x-fill text-white"></i>
-</a>
-<a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
-<i class="ri-instagram-fill text-white"></i>
-</a>
-</div>
-</div>
-<div>
-<h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-<ul class="space-y-2">
-<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
-<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Fix Your Device</a></li>
-<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Buy Refurbished</a></li>
-<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Sell Your Phone</a></li>
-<li><a href="https://readdy.ai/home/9272691a-4639-48f9-910a-d084801c7964/5d729717-82f8-4eb8-bed3-a34611d92de3" data-readdy="true" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-<li><a href="#" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
-</ul>
-</div>
-<div>
-<h4 class="text-lg font-semibold mb-4">Support</h4>
-<ul class="space-y-2">
-<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
-<li><a href="#" class="text-gray-400 hover:text-white transition-colors">FAQs</a></li>
-<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
-<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
-</ul>
-</div>
-<div>
-<h4 class="text-lg font-semibold mb-4">Contact</h4>
-<ul class="space-y-2">
-<li class="flex items-start">
-<i class="ri-map-pin-line mr-2 mt-1 text-gray-400"></i>
-<span class="text-gray-400">824 21st Street, Lewiston, ID 83501</span>
-</li>
-<li class="flex items-start">
-<i class="ri-phone-line mr-2 mt-1 text-gray-400"></i>
-<span class="text-gray-400">+1 (208) 553-9875</span>
-</li>
-<li class="flex items-start">
-<i class="ri-mail-line mr-2 mt-1 text-gray-400"></i>
-<span class="text-gray-400">support@themobiletechs.com</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
-<p class="text-gray-500 mb-4 md:mb-0">© 2025 Phone Recycling Service. All rights reserved.</p>
-<div class="flex items-center space-x-4">
-<i class="ri-visa-fill text-gray-400 ri-xl"></i>
-<i class="ri-mastercard-fill text-gray-400 ri-xl"></i>
-<i class="ri-paypal-fill text-gray-400 ri-xl"></i>
-<i class="ri-apple-fill text-gray-400 ri-xl"></i>
-</div>
-</div>
-</div>
-</footer>
-<!-- Chatbot -->
-<div id="chatbot" class="chatbot fixed bottom-0 right-4 w-96 max-w-full z-50 shadow-2xl rounded-t-lg bg-white overflow-hidden">
-<div class="bg-primary p-4 flex justify-between items-center cursor-pointer" id="chatbotHeader">
-<h3 class="text-white font-semibold">Sell Your Phone</h3>
-<button id="closeChatbot" class="text-white hover:text-gray-200">
-<i class="ri-close-line ri-lg"></i>
-</button>
-</div>
-<div class="p-4 max-h-[500px] overflow-y-auto" id="chatbotContent">
-<div class="mb-6">
-<p class="text-gray-700 mb-2">Welcome! Let's get you a quote for your phone. Please fill in the details below:</p>
-<div class="bg-gray-100 rounded-lg p-1 mb-4">
-<div class="flex">
-<button class="flex-1 py-2 px-1 rounded-full bg-primary text-white text-sm">Details</button>
-<button class="flex-1 py-2 px-1 text-gray-500 text-sm">Quote</button>
-<button class="flex-1 py-2 px-1 text-gray-500 text-sm">Store</button>
-<button class="flex-1 py-2 px-1 text-gray-500 text-sm">Payment</button>
-</div>
-</div>
-</div>
-<form id="sellForm">
-<div class="space-y-4">
-<div>
-<label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
-<input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="Enter your full name" required>
-</div>
-<div>
-<label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-<input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="Enter your email" required>
-</div>
-<div>
-<label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
-<input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="Enter your phone number" required>
-</div>
-<div>
-<label for="brand" class="block text-sm font-medium text-gray-700 mb-1">Phone Brand</label>
-<div class="relative">
-<select id="brand" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none appearance-none pr-8" required>
-<option value="" disabled selected>Select brand</option>
-<option value="apple">Apple</option>
-<option value="samsung">Samsung</option>
-<option value="google">Google</option>
-<option value="oneplus">OnePlus</option>
-<option value="xiaomi">Xiaomi</option>
-<option value="other">Other</option>
-</select>
-<div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-<i class="ri-arrow-down-s-line text-gray-400"></i>
-</div>
-</div>
-</div>
-<div>
-<label for="model" class="block text-sm font-medium text-gray-700 mb-1">Phone Model</label>
-<div class="relative">
-<select id="model" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none appearance-none pr-8" required disabled>
-<option value="" disabled selected>Select model (choose brand first)</option>
-</select>
-<div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-<i class="ri-arrow-down-s-line text-gray-400"></i>
-</div>
-</div>
-</div>
-<div>
-<label class="block text-sm font-medium text-gray-700 mb-2">Device Condition</label>
-<div class="grid grid-cols-2 gap-2 custom-radio">
-<input type="radio" id="condition-perfect" name="condition" value="perfect" required>
-<label for="condition-perfect" class="text-center">Perfect</label>
-<input type="radio" id="condition-good" name="condition" value="good">
-<label for="condition-good" class="text-center">Good</label>
-<input type="radio" id="condition-fair" name="condition" value="fair">
-<label for="condition-fair" class="text-center">Fair</label>
-<input type="radio" id="condition-damaged" name="condition" value="damaged">
-<label for="condition-damaged" class="text-center">Damaged</label>
-</div>
-</div>
-<div>
-<label class="block text-sm font-medium text-gray-700 mb-2">Carrier Lock Status</label>
-<div class="flex items-center">
-<label class="custom-switch mr-3">
-<input type="checkbox" id="unlocked">
-<span class="slider"></span>
-</label>
-<span id="lockStatus" class="text-sm text-gray-700">Locked to carrier</span>
-</div>
-</div>
-<div class="pt-4">
-<button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-4 !rounded-button shadow transition-all whitespace-nowrap">
-Get My Quote
-</button>
-</div>
-</div>
-</form>
-</div>
-</div>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-// Chatbot functionality
-const sellButton = document.getElementById('sellButton');
-const chatbot = document.getElementById('chatbot');
-const closeChatbot = document.getElementById('closeChatbot');
-const chatbotHeader = document.getElementById('chatbotHeader');
-sellButton.addEventListener('click', function() {
-chatbot.classList.add('active');
-});
-closeChatbot.addEventListener('click', function() {
-chatbot.classList.remove('active');
-});
-// Phone brand and model dependency
-const brandSelect = document.getElementById('brand');
-const modelSelect = document.getElementById('model');
-const phoneModels = {
-apple: ['iPhone 15 Pro Max', 'iPhone 15 Pro', 'iPhone 15', 'iPhone 14 Pro Max', 'iPhone 14 Pro', 'iPhone 14', 'iPhone 13 Pro Max', 'iPhone 13', 'iPhone 12', 'iPhone 11', 'iPhone SE (2022)'],
-samsung: ['Galaxy S24 Ultra', 'Galaxy S24+', 'Galaxy S24', 'Galaxy S23 Ultra', 'Galaxy S23', 'Galaxy Z Fold 5', 'Galaxy Z Flip 5', 'Galaxy A54', 'Galaxy A34'],
-google: ['Pixel 8 Pro', 'Pixel 8', 'Pixel 7 Pro', 'Pixel 7', 'Pixel 6a', 'Pixel 6', 'Pixel 5'],
-oneplus: ['OnePlus 12', 'OnePlus 11', 'OnePlus Nord 3', 'OnePlus 10 Pro', 'OnePlus 10T', 'OnePlus 9 Pro'],
-xiaomi: ['Xiaomi 14 Ultra', 'Xiaomi 14', 'Xiaomi 13 Pro', 'Xiaomi 13', 'Redmi Note 13 Pro', 'Redmi Note 12'],
-other: ['Other (please specify in notes)']
-};
-brandSelect.addEventListener('change', function() {
-const brand = this.value;
-// Clear and disable model select if no brand is selected
-if (!brand) {
-modelSelect.innerHTML = '<option value="" disabled selected>Select model (choose brand first)</option>';
-modelSelect.disabled = true;
-return;
-}
-// Enable model select and populate options
-modelSelect.disabled = false;
-modelSelect.innerHTML = '<option value="" disabled selected>Select model</option>';
-// Add models for selected brand
-phoneModels[brand].forEach(model => {
-const option = document.createElement('option');
-option.value = model.toLowerCase().replace(/\s+/g, '-');
-option.textContent = model;
-modelSelect.appendChild(option);
-});
-});
-// Carrier lock toggle
-const unlocked = document.getElementById('unlocked');
-const lockStatus = document.getElementById('lockStatus');
-unlocked.addEventListener('change', function() {
-lockStatus.textContent = this.checked ? 'Unlocked' : 'Locked to carrier';
-});
-// Form submission
-const sellForm = document.getElementById('sellForm');
-sellForm.addEventListener('submit', function(e) {
-e.preventDefault();
-// In a real implementation, you would send the form data to a server
-alert('Thank you! We are processing your quote. We will contact you shortly.');
-});
-});
-</script>
+      </div>
+    </div>
+  </section>
+
+  <!-- Store Locations -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Our Store Locations</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="h-96 rounded-lg overflow-hidden shadow-md" style="background-image: url('https://images.unsplash.com/photo-1526628953301-3e589a6a8b74'); background-size: cover; background-position: center;"></div>
+        <div class="bg-gray-50 rounded-lg p-8 shadow-sm">
+          <h3 class="text-2xl font-semibold mb-6">Find Us Nearby</h3>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="w-10 h-10 flex items-center justify-center mr-4">
+                <i class="ri-map-pin-line ri-lg text-primary"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg">The Mobile Techs</h4>
+                <p class="text-gray-600">824 21st Street, Lewiston, ID 83501</p>
+                <p class="text-gray-600">Mon-Fri: 8AM-6PM, Sat: By Appointment</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 pt-6 border-t border-gray-200 space-y-4">
+            <div class="flex items-center">
+              <div class="w-10 h-10 flex items-center justify-center mr-4">
+                <i class="ri-phone-line ri-lg text-primary"></i>
+              </div>
+              <div>
+                <p class="text-gray-600">Call us: <a href="tel:+12085539875" class="font-semibold">+1 (208) 553-1533</a></p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-10 h-10 flex items-center justify-center mr-4">
+                <i class="ri-mail-line ri-lg text-primary"></i>
+              </div>
+              <div>
+                <p class="text-gray-600">Email: <a href="mailto:support@themobiletechs.com" class="font-semibold">support@themobiletechs.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Elements -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-white rounded-lg p-8 shadow-sm">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 flex items-center justify-center mr-4 bg-primary/10 rounded-full">
+              <i class="ri-customer-service-2-line ri-lg text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Expert Service</h3>
+          </div>
+          <p class="text-gray-600">Our team of certified technicians will assess your device accurately and provide the best possible value.</p>
+        </div>
+        <div class="bg-white rounded-lg p-8 shadow-sm">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 flex items-center justify-center mr-4 bg-primary/10 rounded-full">
+              <i class="ri-secure-payment-line ri-lg"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Secure Process</h3>
+          </div>
+          <p class="text-gray-600">We ensure your data is completely erased and your personal information is protected throughout the entire process.</p>
+        </div>
+        <div class="bg-white rounded-lg p-8 shadow-sm">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 flex items-center justify-center mr-4 bg-primary/10 rounded-full">
+              <i class="ri-price-tag-3-line ri-lg"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Best Value</h3>
+          </div>
+          <p class="text-gray-600">We regularly monitor market prices to ensure we offer the most competitive rates for your devices.</p>
+        </div>
+        <div class="bg-white rounded-lg p-8 shadow-sm">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 flex items-center justify-center mr-4 bg-primary/10 rounded-full">
+              <i class="ri-recycle-line ri-lg"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Eco-Friendly</h3>
+          </div>
+          <p class="text-gray-600">By selling your device to us, you're contributing to electronics recycling and reducing e-waste.</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg p-8 shadow-sm">
+        <h3 class="text-2xl font-semibold text-center mb-8">Customer Reviews</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="border border-gray-100 rounded-lg p-6">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <span class="ml-2 text-gray-600">5.0</span>
+            </div>
+            <p class="text-gray-700 mb-4">"I was amazed at how simple the process was. Brought in my old iPhone with a cracked screen and got cash within minutes!"</p>
+            <div class="flex items-center">
+              <span class="font-medium">Michael Thompson</span>
+              <span class="mx-2 text-gray-400">•</span>
+              <span class="text-gray-500">May 10, 2025</span>
+            </div>
+          </div>
+          <div class="border border-gray-100 rounded-lg p-6">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <span class="ml-2 text-gray-600">5.0</span>
+            </div>
+            <p class="text-gray-700 mb-4">"They offered me $50 more than another store for my Samsung. The staff was friendly and the payment was instant."</p>
+            <div class="flex items-center">
+              <span class="font-medium">Rebecca Williams</span>
+              <span class="mx-2 text-gray-400">•</span>
+              <span class="text-gray-500">May 2, 2025</span>
+            </div>
+          </div>
+          <div class="border border-gray-100 rounded-lg p-6">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+              </div>
+              <span class="ml-2 text-gray-600">4.5</span>
+            </div>
+            <p class="text-gray-700 mb-4">"Great experience selling my water-damaged Pixel. I thought it was worthless, but they still gave me a fair price for it."</p>
+            <div class="flex items-center">
+              <span class="font-medium">Daniel Rodriguez</span>
+              <span class="mx-2 text-gray-400">•</span>
+              <span class="text-gray-500">April 28, 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-12 pb-6">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div>
+          <a href="/" class="flex items-center text-2xl font-bold mb-4">
+            <span class="text-white">Mobile</span>
+            <span class="text-red-500 flex items-center">Techs
+              <i class="ri-quill-pen-line text-red-500 transform -rotate-90 ml-1 h-6 w-6 flex items-center justify-center"></i>
+            </span>
+          </a>
+          <p class="text-gray-400 mb-4">Your trusted partner for selling, buying, and repairing mobile devices since 2010.</p>
+          <div class="flex space-x-4">
+            <a href="https://facebook.com/mobiletechs" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+              <i class="ri-facebook-fill text-white"></i>
+            </a>
+            <a href="https://twitter.com/mobiletechs" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+              <i class="ri-twitter-x-fill text-white"></i>
+            </a>
+            <a href="https://instagram.com/mobiletechs" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+              <i class="ri-instagram-fill text-white"></i>
+            </a>
+            <a href="https://youtube.com/mobiletechs" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+              <i class="ri-youtube-fill text-white"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="/index.html" class="text-gray-400 hover:text-white">Home</a></li>
+            <li><a href="/fix.html" class="text-gray-400 hover:text-white">Fix Your Device</a></li>
+            <li><a href="/buy.html" class="text-gray-400 hover:text-white">Buy Phones</a></li>
+            <li><a href="/sell.html" class="text-gray-400 hover:text-white">Sell Your Phone</a></li>
+            <li><a href="/about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+            <li><a href="/faq.html" class="text-gray-400 hover:text-white">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Support</h4>
+          <ul class="space-y-2">
+            <li><a href="/contact.html" class="text-gray-400 hover:text-white">Contact Us</a></li>
+            <li><a href="/faq.html" class="text-gray-400 hover:text-white">FAQs</a></li>
+            <li><a href="/privacy.html" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+            <li><a href="/terms.html" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Contact</h4>
+          <ul class="space-y-3">
+            <li class="flex items-start"><i class="ri-map-pin-line mt-1 mr-3 text-primary"></i>824 21st St. Lewiston, ID 83501</li>
+            <li class="flex items-start"><i class="ri-phone-line mt-1 mr-3 text-primary"></i>(208) 553-8000</li>
+            <li class="flex items-start"><i class="ri-mail-line mt-1 mr-3 text-primary"></i>support@mobiletechs.com</li>
+            <li class="flex items-start"><i class="ri-time-line mt-1 mr-3 text-primary"></i>Mon–Fri: 8AM–6PM, Sat: By Appointment</li>
+          </ul>
+          <div class="mt-6">
+            <h5 class="text-sm font-semibold uppercase tracking-wider mb-3">We Accept</h5>
+            <div class="flex space-x-3">
+              <i class="ri-visa-fill text-2xl text-gray-400"></i>
+              <i class="ri-mastercard-fill text-2xl text-gray-400"></i>
+              <i class="ri-paypal-fill text-2xl text-gray-400"></i>
+              <i class="ri-apple-fill text-2xl text-gray-400"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-6 mt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2025 Mobile Techs. All rights reserved.</p>
+        <div class="flex space-x-6">
+          <a href="/privacy.html" class="text-gray-500 text-sm hover:text-white">Privacy Policy</a>
+          <a href="/terms.html" class="text-gray-500 text-sm hover:text-white">Terms of Service</a>
+          <a href="/cookies.html" class="text-gray-500 text-sm hover:text-white">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Mobile menu toggle
+      const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Chatbot modal
+      const chatbotToggle = document.getElementById('chatbot-toggle');
+      const openSellFormBtn = document.getElementById('openSellFormBtn');
+      const closeModalBtn = document.getElementById('closeModalBtn');
+      const sellFormModal = document.getElementById('sellFormModal');
+      [chatbotToggle, openSellFormBtn].forEach(btn => {
+        btn.addEventListener('click', () => {
+          sellFormModal.classList.remove('hidden');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+      closeModalBtn.addEventListener('click', () => {
+        sellFormModal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      });
+      sellFormModal.addEventListener('click', e => {
+        if (e.target === sellFormModal) {
+          sellFormModal.classList.add('hidden');
+          document.body.style.overflow = 'auto';
+        }
+      });
+
+      // Phone brand and model dependency
+      const brandSelect = document.getElementById('brand');
+      const modelSelect = document.getElementById('model');
+      const phoneModels = {
+        apple: ['iPhone 15 Pro Max', 'iPhone 15 Pro', 'iPhone 15', 'iPhone 14 Pro Max', 'iPhone 14 Pro', 'iPhone 14', 'iPhone 13', 'iPhone 12', 'iPhone 11', 'iPhone SE (2022)'],
+        samsung: ['Galaxy S24 Ultra', 'Galaxy S24+', 'Galaxy S24', 'Galaxy S23 Ultra', 'Galaxy S23', 'Galaxy Z Fold 5', 'Galaxy Z Flip 5', 'Galaxy A54'],
+        google: ['Pixel 8 Pro', 'Pixel 8', 'Pixel 7 Pro', 'Pixel 7', 'Pixel 6'],
+        oneplus: ['OnePlus 12', 'OnePlus 11', 'OnePlus Nord 3', 'OnePlus 10 Pro'],
+        xiaomi: ['Xiaomi 14', 'Xiaomi 13 Pro', 'Redmi Note 13 Pro', 'Redmi Note 12'],
+        other: ['Other']
+      };
+      brandSelect.addEventListener('change', function() {
+        const brand = this.value;
+        modelSelect.innerHTML = '<option value="" disabled selected>Select an option</option>';
+        modelSelect.disabled = !brand;
+        if (brand && phoneModels[brand]) {
+          phoneModels[brand].forEach(model => {
+            const option = document.createElement('option');
+            option.value = model.toLowerCase().replace(/\s+/g, '-');
+            option.textContent = model;
+            modelSelect.appendChild(option);
+          });
+        }
+      });
+
+      // Carrier lock toggle
+      const unlocked = document.getElementById('unlocked');
+      const lockStatus = document.getElementById('lockStatus');
+      unlocked.addEventListener('change', function() {
+        lockStatus.textContent = this.checked ? 'Unlocked' : 'Locked';
+      });
+
+      // Form submission
+      const sellForm = document.getElementById('sellForm');
+      sellForm.addEventListener('submit', e => {
+        e.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const brand = document.getElementById('brand').value;
+        const model = document.getElementById('model').value;
+        const condition = document.querySelector('input[name="condition"]:checked');
+        if (!name || !email || !phone || !brand || !model || !condition) {
+          alert('Please fill out all required fields.');
+          return;
+        }
+        const submitBtn = sellForm.querySelector('button[type="submit"]');
+        submitBtn.textContent = 'Submitting...';
+        submitBtn.disabled = true;
+        setTimeout(() => {
+          alert('Thank you! We are processing your quote. We will contact you shortly.');
+          sellFormModal.classList.add('hidden');
+          document.body.style.overflow = 'auto';
+          sellForm.reset();
+          modelSelect.innerHTML = '<option value="" disabled selected>Select model (choose brand first)</option>';
+          modelSelect.disabled = true;
+          lockStatus.textContent = 'Locked to carrier';
+          submitBtn.textContent = 'Get My Quote';
+          submitBtn.disabled = false;
+        }, 500);
+      });
+    });
+  </script>
 </body>
 </html>
