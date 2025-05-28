@@ -1,738 +1,812 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6TZ4QP1RBP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6TZ4QP1RBP');
-</script>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Buy Phones | Premium Mobile Devices</title>
-<script src="https://cdn.tailwindcss.com/3.4.16"></script>
-<script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#10b981'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
-<style>
-:where([class^="ri-"])::before { content: "\f3c2"; }
-body {
-font-family: 'Inter', sans-serif;
-}
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
--webkit-appearance: none;
-margin: 0;
-}
-.phone-card:hover {
-transform: translateY(-4px);
-box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
-}
-.condition-badge.new {
-background-color: #dcfce7;
-color: #166534;
-}
-.condition-badge.refurbished {
-background-color: #e0f2fe;
-color: #075985;
-}
-.condition-badge.used {
-background-color: #fef3c7;
-color: #92400e;
-}
-.chat-form {
-display: none;
-}
-.chat-form.active {
-display: block;
-}
-.warranty-content {
-max-height: 0;
-overflow: hidden;
-transition: max-height 0.3s ease-out;
-}
-.warranty-content.active {
-max-height: 1000px;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse premium new, refurbished, and used mobile devices at Mobile Techs in Lewiston, ID.">
+  <meta name="keywords" content="buy phones, refurbished phones, Lewiston ID, mobile techs, iPhone, Samsung, Google Pixel">
+  <meta name="author" content="Mobile Techs">
+  <!-- OpenGraph Tags -->
+  <meta property="og:title" content="Buy Phones | Mobile Techs">
+  <meta property="og:description" content="Browse premium new, refurbished, and used mobile devices at competitive prices.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://themobiletechs.com/buy">
+  <meta property="og:image" content="https://themobiletechs.com/assets/og-image.jpg">
+  <!-- Mobile Tags -->
+  <meta name="theme-color" content="#3b82f6">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Favicon and Apple Touch Icons -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6TZ4QP1RBP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6TZ4QP1RBP');
+  </script>
+  <title>Buy Phones | Mobile Techs - Premium Mobile Devices</title>
+  <script src="https://cdn.tailwindcss.com/3.4.14"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3b82f6',
+            secondary: '#10b981'
+          },
+          borderRadius: {
+            'none': '0px',
+            'sm': '4px',
+            DEFAULT: '8px',
+            'md': '12px',
+            'lg': '16px',
+            'xl': '20px',
+            '2xl': '24px',
+            '3xl': '32px',
+            'full': '9999px',
+            'button': '8px'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .phone-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    }
+    .condition-badge.new {
+      background-color: #dcfce7;
+      color: #166534;
+    }
+    .condition-badge.refurbished {
+      background-color: #e0f2fe;
+      color: #075985;
+    }
+    .condition-badge.used {
+      background-color: #fef3c7;
+      color: #92400e;
+    }
+    .warranty-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+    .warranty-content.active {
+      max-height: 1000px;
+    }
+  </style>
 </head>
 <body class="bg-gray-50">
-<!-- Header -->
-<header class="w-full bg-white shadow-sm sticky top-0 z-50">
-<div class="container mx-auto px-4 py-4 flex justify-between items-center">
-<a href="#" class="text-2xl font-bold flex items-center gap-0">
-<span class="text-[#0A4B9F]">Mobile</span>
-<span class="text-[#FF3D3D]">Techs</span>
-<i class="ri-quill-pen-line text-[#FF3D3D] text-sm ml-0.5"></i>
-</a>
-<nav>
-  <a href="index.html">Home</a> |
-  <a href="fix.html">Fix</a> |
-  <a href="buy.html">Buy</a> |
-  <a href="sell.html">Sell</a> |
-  <a href="about.html">About</a> |
-  <a href="faq.html">FAQ</a>
-</nav>
-<div class="flex items-center space-x-4">
-<button class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary">
-<i class="ri-search-line ri-lg"></i>
-</button>
-<button class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary">
-<i class="ri-shopping-cart-line ri-lg"></i>
-</button>
-<button class="hidden md:block bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap">
-Sign In
-</button>
-<button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-600">
-<i class="ri-menu-line ri-lg"></i>
-</button>
-</div>
-</div>
-</header>
-<main>
-<!-- Hero Section -->
-<section class="bg-gradient-to-r from-blue-50 to-indigo-50 py-16">
-<div class="container mx-auto px-4">
-<div class="max-w-4xl mx-auto text-center">
-<h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Find Your Perfect Phone</h1>
-<p class="text-lg text-gray-600 mb-8">Browse our selection of premium devices at competitive prices with quality assurance</p>
-<div class="flex flex-wrap justify-center gap-4">
-<a href="https://readdy.ai/home/9272691a-4639-48f9-910a-d084801c7964/652022e3-2f58-42c0-8311-2c82c71aa2af" data-readdy="true" class="inline-block">
-<button class="bg-primary text-white px-6 py-3 !rounded-button font-medium whitespace-nowrap">
-Shop Now
-</button>
-</a>
-<button class="bg-white text-gray-800 border border-gray-300 px-6 py-3 !rounded-button font-medium whitespace-nowrap">
-View Deals
-</button>
-</div>
-</div>
-</div>
-</section>
-<!-- Filter Section -->
-<section class="py-8 bg-white border-b">
-<div class="container mx-auto px-4">
-<div class="flex flex-wrap items-center justify-between gap-4">
-<div class="flex items-center gap-2">
-<span class="text-gray-700 font-medium">Filters:</span>
-<div class="relative">
-<button class="flex items-center gap-2 bg-gray-100 px-4 py-2 !rounded-button text-gray-700">
-Brand
-<i class="ri-arrow-down-s-line"></i>
-</button>
-</div>
-<div class="relative">
-<button class="flex items-center gap-2 bg-gray-100 px-4 py-2 !rounded-button text-gray-700">
-Price
-<i class="ri-arrow-down-s-line"></i>
-</button>
-</div>
-<div class="relative">
-<button class="flex items-center gap-2 bg-gray-100 px-4 py-2 !rounded-button text-gray-700">
-Condition
-<i class="ri-arrow-down-s-line"></i>
-</button>
-</div>
-</div>
-<div class="relative">
-<button class="flex items-center gap-2 bg-gray-100 px-4 py-2 !rounded-button text-gray-700">
-Sort by: Newest
-<i class="ri-arrow-down-s-line"></i>
-</button>
-</div>
-</div>
-</div>
-</section>
-<!-- Featured Phones Grid -->
-<section class="py-12 bg-gray-50">
-<div class="container mx-auto px-4">
-<h2 class="text-2xl font-bold text-gray-900 mb-8">Featured Phones</h2>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-<!-- Phone Card 1 -->
-<div class="phone-card bg-white rounded shadow-sm hover:shadow-lg transition-all duration-300">
-<div class="relative">
-<img src="https://readdy.ai/api/search-image?query=professional%20product%20photography%20of%20an%20iPhone%2015%20Pro%20Max%20in%20titanium%20gray%20color%20on%20a%20clean%20white%20background%2C%20high%20resolution%2C%20studio%20lighting%2C%20minimalist%20style%2C%20showing%20the%20phone%20from%20a%20slight%20angle%20to%20display%20both%20front%20and%20side&width=400&height=400&seq=1&orientation=squarish" alt="iPhone 15 Pro Max" class="w-full h-64 object-cover object-top rounded-t">
-<span class="condition-badge refurbished absolute top-4 right-4 text-xs font-medium px-2 py-1 rounded-full">Renewed</span>
-</div>
-<div class="p-4">
-<h3 class="text-lg font-semibold text-gray-900">iPhone 15 Pro Max</h3>
-<div class="mt-2 text-sm text-gray-600">
-<p>8GB RAM • 512GB Storage</p>
-<p>6.7" Super Retina XDR</p>
-</div>
-<div class="mt-4 flex items-center justify-between">
-<span class="text-xl font-bold text-gray-900">$899</span>
-<button class="bg-primary text-white px-3 py-2 !rounded-button text-sm font-medium whitespace-nowrap">Buy Now</button>
-</div>
-</div>
-</div>
-<!-- Phone Card 2 -->
-<div class="phone-card bg-white rounded shadow-sm hover:shadow-lg transition-all duration-300">
-<div class="relative">
-<img src="https://readdy.ai/api/search-image?query=professional%20product%20photography%20of%20a%20Samsung%20Galaxy%20S24%20Ultra%20in%20titanium%20black%20color%20on%20a%20clean%20white%20background%2C%20high%20resolution%2C%20studio%20lighting%2C%20minimalist%20style%2C%20showing%20the%20phone%20from%20a%20slight%20angle%20to%20display%20both%20front%20and%20side&width=400&height=400&seq=2&orientation=squarish" alt="Samsung Galaxy S24 Ultra" class="w-full h-64 object-cover object-top rounded-t">
-<span class="condition-badge used absolute top-4 right-4 text-xs font-medium px-2 py-1 rounded-full">Used</span>
-</div>
-<div class="p-4">
-<h3 class="text-lg font-semibold text-gray-900">Galaxy S24 Ultra</h3>
-<div class="mt-2 text-sm text-gray-600">
-<p>12GB RAM • 512GB Storage</p>
-<p>6.8" Dynamic AMOLED 2X</p>
-</div>
-<div class="mt-4 flex items-center justify-between">
-<span class="text-xl font-bold text-gray-900">$949</span>
-<button class="bg-primary text-white px-3 py-2 !rounded-button text-sm font-medium whitespace-nowrap">Buy Now</button>
-</div>
-</div>
-</div>
-<!-- Phone Card 3 -->
-<div class="phone-card bg-white rounded shadow-sm hover:shadow-lg transition-all duration-300">
-<div class="relative">
-<img src="https://readdy.ai/api/search-image?query=professional%20product%20photography%20of%20an%20iPhone%2015%20in%20natural%20titanium%20color%20on%20a%20clean%20white%20background%2C%20high%20resolution%2C%20studio%20lighting%2C%20minimalist%20style%2C%20showing%20the%20phone%20from%20a%20slight%20angle%20to%20display%20both%20front%20and%20side&width=400&height=400&seq=3&orientation=squarish" alt="iPhone 15" class="w-full h-64 object-cover object-top rounded-t">
-<span class="condition-badge refurbished absolute top-4 right-4 text-xs font-medium px-2 py-1 rounded-full">Renewed</span>
-</div>
-<div class="p-4">
-<h3 class="text-lg font-semibold text-gray-900">iPhone 15</h3>
-<div class="mt-2 text-sm text-gray-600">
-<p>6GB RAM • 256GB Storage</p>
-<p>6.1" Super Retina XDR</p>
-</div>
-<div class="mt-4 flex items-center justify-between">
-<span class="text-xl font-bold text-gray-900">$649</span>
-<button class="bg-primary text-white px-3 py-2 !rounded-button text-sm font-medium whitespace-nowrap">Buy Now</button>
-</div>
-</div>
-</div>
-<!-- Phone Card 4 -->
-<div class="phone-card bg-white rounded shadow-sm hover:shadow-lg transition-all duration-300">
-<div class="relative">
-<img src="https://readdy.ai/api/search-image?query=professional%20product%20photography%20of%20a%20Google%20Pixel%208%20Pro%20in%20obsidian%20black%20color%20on%20a%20clean%20white%20background%2C%20high%20resolution%2C%20studio%20lighting%2C%20minimalist%20style%2C%20showing%20the%20phone%20from%20a%20slight%20angle%20to%20display%20both%20front%20and%20side&width=400&height=400&seq=4&orientation=squarish" alt="Google Pixel 8 Pro" class="w-full h-64 object-cover object-top rounded-t">
-<span class="condition-badge used absolute top-4 right-4 text-xs font-medium px-2 py-1 rounded-full">Used</span>
-</div>
-<div class="p-4">
-<h3 class="text-lg font-semibold text-gray-900">Google Pixel 8 Pro</h3>
-<div class="mt-2 text-sm text-gray-600">
-<p>12GB RAM • 256GB Storage</p>
-<p>6.7" LTPO OLED</p>
-</div>
-<div class="mt-4 flex items-center justify-between">
-<span class="text-xl font-bold text-gray-900">$699</span>
-<button class="bg-primary text-white px-3 py-2 !rounded-button text-sm font-medium whitespace-nowrap">Buy Now</button>
-</div>
-</div>
-</div>
-<!-- Phone Card 5 -->
-<div class="phone-card bg-white rounded shadow-sm hover:shadow-lg transition-all duration-300">
-<div class="relative">
-<img src="https://readdy.ai/api/search-image?query=professional%20product%20photography%20of%20a%20Samsung%20Galaxy%20S24%20Plus%20in%20cream%20color%20on%20a%20clean%20white%20background%2C%20high%20resolution%2C%20studio%20lighting%2C%20minimalist%20style%2C%20showing%20the%20phone%20from%20a%20slight%20angle%20to%20display%20both%20front%20and%20side&width=400&height=400&seq=5&orientation=squarish" alt="Samsung Galaxy S24+" class="w-full h-64 object-cover object-top rounded-t">
-<span class="condition-badge refurbished absolute top-4 right-4 text-xs font-medium px-2 py-1 rounded-full">Renewed</span>
-</div>
-<div class="p-4">
-<h3 class="text-lg font-semibold text-gray-900">Galaxy S24+</h3>
-<div class="mt-2 text-sm text-gray-600">
-<p>12GB RAM • 256GB Storage</p>
-<p>6.7" Dynamic AMOLED 2X</p>
-</div>
-<div class="mt-4 flex items-center justify-between">
-<span class="text-xl font-bold text-gray-900">$749</span>
-<button class="bg-primary text-white px-3 py-2 !rounded-button text-sm font-medium whitespace-nowrap">Buy Now</button>
-</div>
-</div>
-</div>
-<!-- Phone Card 6 -->
-<div class="phone-card bg-white rounded shadow-sm hover:shadow-lg transition-all duration-300">
-<div class="relative">
-<img src="https://readdy.ai/api/search-image?query=professional%20product%20photography%20of%20a%20Google%20Pixel%208%20in%20mint%20green%20color%20on%20a%20clean%20white%20background%2C%20high%20resolution%2C%20studio%20lighting%2C%20minimalist%20style%2C%20showing%20the%20phone%20from%20a%20slight%20angle%20to%20display%20both%20front%20and%20side&width=400&height=400&seq=6&orientation=squarish" alt="Google Pixel 8" class="w-full h-64 object-cover object-top rounded-t">
-<span class="condition-badge used absolute top-4 right-4 text-xs font-medium px-2 py-1 rounded-full">Used</span>
-</div>
-<div class="p-4">
-<h3 class="text-lg font-semibold text-gray-900">Google Pixel 8</h3>
-<div class="mt-2 text-sm text-gray-600">
-<p>8GB RAM • 128GB Storage</p>
-<p>6.2" OLED</p>
-</div>
-<div class="mt-4 flex items-center justify-between">
-<span class="text-xl font-bold text-gray-900">$499</span>
-<button class="bg-primary text-white px-3 py-2 !rounded-button text-sm font-medium whitespace-nowrap">Buy Now</button>
-</div>
-</div>
-</div>
-</div>
-<div class="mt-10 text-center">
-<button class="bg-white border border-gray-300 text-gray-700 px-6 py-3 !rounded-button font-medium whitespace-nowrap hover:bg-gray-50">
-Load More
-</button>
-</div>
-</div>
-</section>
-<!-- Buy a Phone CTA Section -->
-<section class="py-16 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
-<div class="container mx-auto px-4">
-<div class="max-w-4xl mx-auto text-center">
-<h2 class="text-3xl font-bold mb-4">Can't Find What You're Looking For?</h2>
-<p class="text-lg opacity-90 mb-8">Tell us your requirements and we'll help you find the perfect device</p>
-<button id="openChatBtn" class="bg-white text-primary px-8 py-4 !rounded-button font-semibold text-lg whitespace-nowrap shadow-lg hover:shadow-xl transition-all">
-Buy a Phone
-</button>
-</div>
-</div>
-</section>
-<!-- Chat Form Modal -->
-<div id="chatFormModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
-<div class="bg-white rounded-lg w-full max-w-md mx-4 overflow-hidden shadow-xl">
-<div class="flex items-center justify-between bg-primary text-white px-6 py-4">
-<h3 class="text-xl font-semibold">Find Your Perfect Phone</h3>
-<button id="closeModalBtn" class="w-8 h-8 flex items-center justify-center text-white hover:bg-primary-dark rounded-full">
-<i class="ri-close-line ri-lg"></i>
-</button>
-</div>
-<div class="p-6">
-<div class="mb-6">
-<div class="flex mb-4">
-<div class="w-8 h-8 flex items-center justify-center bg-primary text-white rounded-full mr-3 flex-shrink-0">1</div>
-<div class="text-gray-700">
-<h4 class="font-medium">Personal Information</h4>
-<p class="text-sm text-gray-500">We'll use this to contact you about your device</p>
-</div>
-</div>
-<form id="chatForm" class="space-y-4">
-<div class="chat-form active" id="step1">
-<div class="mb-4">
-<label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
-<input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="Enter your name">
-</div>
-<div class="mb-4">
-<label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-<input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="Enter your email">
-</div>
-<div class="mb-4">
-<label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
-<input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="Enter your phone number">
-</div>
-<div class="flex justify-end">
-<button type="button" class="next-step bg-primary text-white px-6 py-2 !rounded-button font-medium whitespace-nowrap" data-current="step1" data-next="step2">Next</button>
-</div>
-</div>
-<div class="chat-form" id="step2">
-<div class="flex mb-4">
-<div class="w-8 h-8 flex items-center justify-center bg-primary text-white rounded-full mr-3 flex-shrink-0">2</div>
-<div class="text-gray-700">
-<h4 class="font-medium">Device Preferences</h4>
-<p class="text-sm text-gray-500">Tell us what kind of phone you're looking for</p>
-</div>
-</div>
-<div class="mb-4">
-<label for="brand" class="block text-sm font-medium text-gray-700 mb-1">Preferred Brand</label>
-<div class="relative">
-<select id="brand" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none appearance-none pr-8">
-<option value="">Select a brand</option>
-<option value="apple">Apple</option>
-<option value="samsung">Samsung</option>
-<option value="google">Google</option>
-<option value="oneplus">OnePlus</option>
-<option value="xiaomi">Xiaomi</option>
-<option value="other">Other</option>
-</select>
-<div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-<i class="ri-arrow-down-s-line text-gray-400"></i>
-</div>
-</div>
-</div>
-<div class="mb-4">
-<label for="model" class="block text-sm font-medium text-gray-700 mb-1">Preferred Model</label>
-<input type="text" id="model" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="E.g. iPhone 13, Galaxy S22">
-</div>
-<div class="flex justify-between">
-<button type="button" class="prev-step bg-gray-200 text-gray-700 px-6 py-2 !rounded-button font-medium whitespace-nowrap" data-current="step2" data-prev="step1">Back</button>
-<button type="button" class="next-step bg-primary text-white px-6 py-2 !rounded-button font-medium whitespace-nowrap" data-current="step2" data-next="step3">Next</button>
-</div>
-</div>
-<div class="chat-form" id="step3">
-<div class="flex mb-4">
-<div class="w-8 h-8 flex items-center justify-center bg-primary text-white rounded-full mr-3 flex-shrink-0">3</div>
-<div class="text-gray-700">
-<h4 class="font-medium">Specifications</h4>
-<p class="text-sm text-gray-500">Fine-tune your device requirements</p>
-</div>
-</div>
-<div class="mb-4">
-<label for="storage" class="block text-sm font-medium text-gray-700 mb-1">Storage Capacity</label>
-<div class="relative">
-<select id="storage" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none appearance-none pr-8">
-<option value="">Select storage size</option>
-<option value="64">64GB</option>
-<option value="128">128GB</option>
-<option value="256">256GB</option>
-<option value="512">512GB</option>
-<option value="1024">1TB</option>
-</select>
-<div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-<i class="ri-arrow-down-s-line text-gray-400"></i>
-</div>
-</div>
-</div>
-<div class="mb-4">
-<label for="color" class="block text-sm font-medium text-gray-700 mb-1">Preferred Color</label>
-<input type="text" id="color" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="E.g. Black, White, Blue">
-</div>
-<div class="mb-4">
-<label class="block text-sm font-medium text-gray-700 mb-1">Condition</label>
-<div class="flex space-x-4">
-<label class="flex items-center">
-<input type="radio" name="condition" value="new" class="hidden">
-<span class="w-4 h-4 border border-gray-300 rounded-full flex items-center justify-center mr-2 condition-radio">
-<span class="w-2 h-2 bg-primary rounded-full hidden condition-radio-dot"></span>
-</span>
-<span>New</span>
-</label>
-<label class="flex items-center">
-<input type="radio" name="condition" value="refurbished" class="hidden">
-<span class="w-4 h-4 border border-gray-300 rounded-full flex items-center justify-center mr-2 condition-radio">
-<span class="w-2 h-2 bg-primary rounded-full hidden condition-radio-dot"></span>
-</span>
-<span>Refurbished</span>
-</label>
-<label class="flex items-center">
-<input type="radio" name="condition" value="used" class="hidden">
-<span class="w-4 h-4 border border-gray-300 rounded-full flex items-center justify-center mr-2 condition-radio">
-<span class="w-2 h-2 bg-primary rounded-full hidden condition-radio-dot"></span>
-</span>
-<span>Used</span>
-</label>
-</div>
-</div>
-<div class="flex justify-between">
-<button type="button" class="prev-step bg-gray-200 text-gray-700 px-6 py-2 !rounded-button font-medium whitespace-nowrap" data-current="step3" data-prev="step2">Back</button>
-<button type="submit" class="bg-primary text-white px-6 py-2 !rounded-button font-medium whitespace-nowrap">Submit Request</button>
-</div>
-</div>
-</form>
-</div>
-</div>
-</div>
-</div>
-<!-- Warranty Information Section -->
-<section class="py-12 bg-white">
-<div class="container mx-auto px-4">
-<div class="max-w-4xl mx-auto">
-<h2 class="text-2xl font-bold text-gray-900 mb-8">Warranty Information</h2>
-<div class="border border-gray-200 rounded divide-y divide-gray-200">
-<!-- Warranty Item 1 -->
-<div class="warranty-item">
-<button class="warranty-toggle flex items-center justify-between w-full p-4 text-left focus:outline-none">
-<div class="flex items-center">
-<div class="w-10 h-10 flex items-center justify-center bg-blue-100 text-primary rounded-full mr-3">
-<i class="ri-shield-check-line ri-lg"></i>
-</div>
-<span class="font-medium text-gray-900">Standard Warranty Coverage</span>
-</div>
-<i class="ri-arrow-down-s-line warranty-arrow transition-transform duration-200"></i>
-</button>
-<div class="warranty-content px-6 py-6 pl-16">
-<ul class="space-y-4 text-gray-600 leading-relaxed">
-<li class="flex items-start">
-<i class="ri-check-line text-primary mt-1.5 mr-3"></i>
-<span>90-day warranty on all new devices covering manufacturing defects</span>
-</li>
-<li class="flex items-start">
-<i class="ri-check-line text-primary mt-1.5 mr-3"></i>
-<span>45-day warranty on refurbished devices</span>
-</li>
-<li class="flex items-start">
-<i class="ri-check-line text-primary mt-1.5 mr-3"></i>
-<span>30-day warranty on used devices</span>
-</li>
-<li class="flex items-start">
-<i class="ri-check-line text-primary mt-1.5 mr-3"></i>
-<span>Free repair or replacement for covered issues</span>
-</li>
-</ul>
-</div>
-</div>
-<!-- Warranty Item 2 -->
-<div class="warranty-item">
-<button class="warranty-toggle flex items-center justify-between w-full p-4 text-left focus:outline-none">
-<div class="flex items-center">
-<div class="w-10 h-10 flex items-center justify-center bg-blue-100 text-primary rounded-full mr-3">
-<i class="ri-error-warning-line ri-lg"></i>
-</div>
-<span class="font-medium text-gray-900">Warranty Exclusions</span>
-</div>
-<i class="ri-arrow-down-s-line warranty-arrow transition-transform duration-200"></i>
-</button>
-<div class="warranty-content px-6 py-6 pl-16">
-<ul class="space-y-4 text-gray-600 leading-relaxed">
-<li class="flex items-start">
-<i class="ri-close-line text-red-500 mt-1.5 mr-3"></i>
-<span>Physical damage (drops, cracks, liquid damage)</span>
-</li>
-<li class="flex items-start">
-<i class="ri-close-line text-red-500 mt-1.5 mr-3"></i>
-<span>Unauthorized repairs or modifications</span>
-</li>
-<li class="flex items-start">
-<i class="ri-close-line text-red-500 mt-1.5 mr-3"></i>
-<span>Normal wear and tear</span>
-</li>
-<li class="flex items-start">
-<i class="ri-close-line text-red-500 mt-1.5 mr-3"></i>
-<span>Software issues not related to hardware defects</span>
-</li>
-</ul>
-</div>
-</div>
-<!-- Warranty Item 3 -->
-<div class="warranty-item">
-<button class="warranty-toggle flex items-center justify-between w-full p-4 text-left focus:outline-none">
-<div class="flex items-center">
-<div class="w-10 h-10 flex items-center justify-center bg-blue-100 text-primary rounded-full mr-3">
-<i class="ri-award-line ri-lg"></i>
-</div>
-<span class="font-medium text-gray-900">Extended Warranty Options</span>
-</div>
-<i class="ri-arrow-down-s-line warranty-arrow transition-transform duration-200"></i>
-</button>
-<div class="warranty-content px-6 py-6 pl-16">
-<div class="space-y-6 text-gray-600 leading-relaxed">
-<p class="text-base">Extend your device protection with our premium warranty options:</p>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="border border-gray-200 rounded p-5">
-<h4 class="font-medium text-gray-900 mb-3">Premium Protection</h4>
-<p class="text-sm mb-3 leading-relaxed">24-month coverage including accidental damage</p>
-<p class="text-primary font-medium">$79.99</p>
-</div>
-<div class="border border-gray-200 rounded p-5">
-<h4 class="font-medium text-gray-900 mb-3">Complete Care</h4>
-<p class="text-sm mb-3 leading-relaxed">36-month coverage with theft protection</p>
-<p class="text-primary font-medium">$129.99</p>
-</div>
-</div>
-<p class="text-sm mt-4">Extended warranty must be purchased within 30 days of device purchase.</p>
-</div>
-</div>
-</div>
-<!-- Warranty Item 4 -->
-<div class="warranty-item">
-<button class="warranty-toggle flex items-center justify-between w-full p-4 text-left focus:outline-none">
-<div class="flex items-center">
-<div class="w-10 h-10 flex items-center justify-center bg-blue-100 text-primary rounded-full mr-3">
-<i class="ri-file-text-line ri-lg"></i>
-</div>
-<span class="font-medium text-gray-900">How to Claim Warranty</span>
-</div>
-<i class="ri-arrow-down-s-line warranty-arrow transition-transform duration-200"></i>
-</button>
-<div class="warranty-content px-6 py-6 pl-16">
-<ol class="space-y-4 text-gray-600 list-decimal pl-4 leading-relaxed">
-<li>Contact our customer support at support@themobiletechs.com or call 1-208-553-9875</li>
-<li>Provide your order number and describe the issue with your device</li>
-<li>Our team will provide you with a return authorization and shipping instructions</li>
-<li>Ship your device using the provided label</li>
-<li>Once received, we'll diagnose the issue and repair or replace your device within 5-7 business days</li>
-</ol>
-<div class="mt-6">
-<a href="#" class="text-primary flex items-center hover:underline">
-<i class="ri-download-line mr-2"></i>
-<span>Download Complete Warranty Terms (PDF)</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-gray-900 text-white pt-12 pb-6">
-<div class="container mx-auto px-4">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-<div>
-<h3 class="text-xl font-bold flex items-center gap-0 mb-4">
-<span class="text-[#0A4B9F]">Mobile</span>
-<span class="text-[#FF3D3D]">Techs</span>
-<i class="ri-quill-pen-line text-[#FF3D3D] text-sm ml-0.5"></i>
-</h3>
-<p class="text-gray-400 mb-4">Your trusted source for premium mobile devices. We offer the best selection of new, refurbished, and used phones at competitive prices.</p>
-<div class="flex space-x-4">
-<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
-<i class="ri-facebook-fill"></i>
-</a>
-<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
-<i class="ri-twitter-x-fill"></i>
-</a>
-<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
-<i class="ri-instagram-fill"></i>
-</a>
-<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
-<i class="ri-youtube-fill"></i>
-</a>
-</div>
-</div>
-<div>
-<h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-<ul class="space-y-2">
-<li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
-<li><a href="#" class="text-gray-400 hover:text-white">Fix</a></li>
-<li><a href="#" class="text-gray-400 hover:text-white">Buy Phones</a></li>
-<li><a href="#" class="text-gray-400 hover:text-white">Sell Your Phone</a></li>
-<li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
-<li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
-</ul>
-</div>
-<div>
-<h4 class="text-lg font-semibold mb-4">Support</h4>
-<ul class="space-y-2">
-<li><a href="#" class="text-gray-400 hover:text-white">FAQs</a></li>
-<li><a href="#" class="text-gray-400 hover:text-white">Shipping Policy</a></li>
-<li><a href="#" class="text-gray-400 hover:text-white">Return Policy</a></li>
-<li><a href="#" class="text-gray-400 hover:text-white">Warranty Information</a></li>
-<li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
-<li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
-</ul>
-</div>
-<div>
-<h4 class="text-lg font-semibold mb-4">Contact Us</h4>
-<ul class="space-y-3">
-<li class="flex items-start">
-<i class="ri-map-pin-line mt-1 mr-3 text-primary"></i>
-<span class="text-gray-400">824 21st Street, Lewiston, ID 83501</span>
-</li>
-<li class="flex items-center">
-<i class="ri-phone-line mr-3 text-primary"></i>
-<span class="text-gray-400">+1 (208) 553-9875</span>
-</li>
-<li class="flex items-center">
-<i class="ri-mail-line mr-3 text-primary"></i>
-<span class="text-gray-400">support@themobiletechs.com</span>
-</li>
-</ul>
-<div class="mt-6">
-<h5 class="text-sm font-semibold uppercase tracking-wider mb-3">We Accept</h5>
-<div class="flex space-x-3">
-<i class="ri-visa-fill text-2xl text-gray-400"></i>
-<i class="ri-mastercard-fill text-2xl text-gray-400"></i>
-<i class="ri-paypal-fill text-2xl text-gray-400"></i>
-<i class="ri-apple-fill text-2xl text-gray-400"></i>
-</div>
-</div>
-</div>
-</div>
-<div class="border-t border-gray-800 pt-6 mt-8">
-<div class="flex flex-col md:flex-row justify-between items-center">
-<p class="text-gray-500 text-sm mb-4 md:mb-0">© 2025 Phone Store. All rights reserved.</p>
-<div class="flex space-x-6">
-<a href="#" class="text-gray-500 text-sm hover:text-white">Privacy Policy</a>
-<a href="#" class="text-gray-500 text-sm hover:text-white">Terms of Service</a>
-<a href="#" class="text-gray-500 text-sm hover:text-white">Cookie Policy</a>
-</div>
-</div>
-</div>
-</div>
-</footer>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-// Warranty accordion
-const warrantyToggles = document.querySelectorAll('.warranty-toggle');
-warrantyToggles.forEach(toggle => {
-toggle.addEventListener('click', function() {
-const content = this.nextElementSibling;
-const arrow = this.querySelector('.warranty-arrow');
-if (content.classList.contains('active')) {
-content.classList.remove('active');
-arrow.style.transform = 'rotate(0deg)';
-} else {
-content.classList.add('active');
-arrow.style.transform = 'rotate(180deg)';
-}
-});
-});
-});
-document.addEventListener('DOMContentLoaded', function() {
-// Chat form modal
-const openChatBtn = document.getElementById('openChatBtn');
-const closeModalBtn = document.getElementById('closeModalBtn');
-const chatFormModal = document.getElementById('chatFormModal');
-openChatBtn.addEventListener('click', function() {
-chatFormModal.classList.remove('hidden');
-document.body.style.overflow = 'hidden';
-});
-closeModalBtn.addEventListener('click', function() {
-chatFormModal.classList.add('hidden');
-document.body.style.overflow = 'auto';
-});
-// Close modal when clicking outside
-chatFormModal.addEventListener('click', function(e) {
-if (e.target === chatFormModal) {
-chatFormModal.classList.add('hidden');
-document.body.style.overflow = 'auto';
-}
-});
-// Form navigation
-const nextButtons = document.querySelectorAll('.next-step');
-const prevButtons = document.querySelectorAll('.prev-step');
-nextButtons.forEach(button => {
-button.addEventListener('click', function() {
-const currentStep = this.getAttribute('data-current');
-const nextStep = this.getAttribute('data-next');
-document.getElementById(currentStep).classList.remove('active');
-document.getElementById(nextStep).classList.add('active');
-});
-});
-prevButtons.forEach(button => {
-button.addEventListener('click', function() {
-const currentStep = this.getAttribute('data-current');
-const prevStep = this.getAttribute('data-prev');
-document.getElementById(currentStep).classList.remove('active');
-document.getElementById(prevStep).classList.add('active');
-});
-});
-// Form submission
-const chatForm = document.getElementById('chatForm');
-chatForm.addEventListener('submit', function(e) {
-e.preventDefault();
-alert('Thank you for your request! Our team will contact you shortly.');
-chatFormModal.classList.add('hidden');
-document.body.style.overflow = 'auto';
-chatForm.reset();
-// Reset form to first step
-document.querySelectorAll('.chat-form').forEach(step => {
-step.classList.remove('active');
-});
-document.getElementById('step1').classList.add('active');
-});
-});
-document.addEventListener('DOMContentLoaded', function() {
-// Custom radio buttons
-const conditionRadios = document.querySelectorAll('input[name="condition"]');
-conditionRadios.forEach(radio => {
-radio.addEventListener('change', function() {
-// Reset all
-document.querySelectorAll('.condition-radio-dot').forEach(dot => {
-dot.classList.add('hidden');
-});
-document.querySelectorAll('.condition-radio').forEach(border => {
-border.classList.remove('border-primary');
-border.classList.add('border-gray-300');
-});
-// Set selected
-if (this.checked) {
-const dot = this.nextElementSibling.querySelector('.condition-radio-dot');
-dot.classList.remove('hidden');
-this.nextElementSibling.classList.remove('border-gray-300');
-this.nextElementSibling.classList.add('border-primary');
-}
-});
-});
-});
-</script>
+  <!-- Chatbot Widget -->
+  <div id="chatbot-widget" class="fixed bottom-4 right-4 z-50">
+    <button id="chatbot-toggle" class="bg-primary text-white rounded-full p-4 shadow-lg hover:bg-primary/90 transition-colors" aria-label="Open chatbot">
+      <i class="ri-chat-3-line ri-xl"></i>
+    </button>
+  </div>
+  <script>
+    // Placeholder chatbot script (replace with your actual chatbot integration)
+    document.getElementById('chatbot-toggle').addEventListener('click', () => {
+      alert('Hi there! How can we help you today?');
+    });
+  </script>
+
+  <!-- Header -->
+  <header class="w-full bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="/" class="text-2xl font-bold flex items-center gap-0">
+        <span class="text-primary">Mobile</span>
+        <span class="text-red-500 flex items-center">Techs
+          <i class="ri-quill-pen-line text-red-500 transform -rotate-90 ml-1 h-6 w-6 flex items-center justify-center"></i>
+        </span>
+      </a>
+      <div class="flex items-center">
+        <button id="mobile-menu-toggle" class="md:hidden w-10 h-10 flex items-center justify-center text-gray-600" aria-label="Toggle mobile menu">
+          <i class="ri-menu-line ri-lg"></i>
+        </button>
+        <nav id="nav-menu" class="hidden md:flex space-x-8">
+          <a href="/index.html" class="text-gray-700 hover:text-primary font-medium">Home</a>
+          <a href="/fix.html" class="text-gray-700 hover:text-primary font-medium">Fix</a>
+          <a href="/buy.html" class="text-primary font-medium border-b-2 border-primary">Buy</a>
+          <a href="/sell.html" class="text-gray-700 hover:text-primary font-medium">Sell</a>
+          <a href="/about.html" class="text-gray-700 hover:text-primary font-medium">About</a>
+          <a href="/faq.html" class="text-gray-700 hover:text-primary font-medium">FAQ</a>
+        </nav>
+        <div class="hidden md:flex items-center space-x-4 ml-8">
+          <button class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary" aria-label="Search">
+            <i class="ri-search-line ri-lg"></i>
+          </button>
+          <button class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary" aria-label="Cart">
+            <i class="ri-shopping-cart-line ri-lg"></i>
+          </button>
+          <button class="bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap">Sign In</button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-sm">
+      <nav class="flex flex-col items-center py-4 space-y-4">
+        <a href="/index.html" class="text-gray-700 hover:text-primary font-medium">Home</a>
+        <a href="/fix.html" class="text-gray-700 hover:text-primary font-medium">Fix</a>
+        <a href="/buy.html" class="text-primary font-medium">Buy</a>
+        <a href="/sell.html" class="text-gray-700 hover:text-primary font-medium">Sell</a>
+        <a href="/about.html" class="text-gray-700 hover:text-primary font-medium">About</a>
+        <a href="/faq.html" class="text-gray-700 hover:text-primary font-medium">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-50 to-indigo-50 py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Find Your Perfect Phone</h1>
+        <p class="text-lg text-gray-600 mb-8">Browse our selection of premium devices at competitive prices with quality assurance</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/buy.html#shop" class="inline-block">
+            <button class="bg-primary text-white px-6 py-3 !rounded-button font-medium whitespace-nowrap">Shop Now</button>
+          </a>
+          <button class="bg-white text-gray-800 border border-gray-300 px-6 py-3 !rounded-button font-medium whitespace-nowrap">View Deals</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="py-8 bg-white border-b">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <span class="text-gray-700 font-medium">Filters:</span>
+          <div class="relative">
+            <button class="filter-toggle flex items-center gap-2 bg-gray-100 px-4 py-2 !rounded-button text-gray-700" data-filter="brand">Brand<i class="ri-arrow-down-s-line"></i></button>
+            <div class="filter-dropdown hidden absolute z-10 bg-white border border-gray-200 rounded shadow-lg mt-2 w-48">
+              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Apple</a>
+              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Samsung</a>
+              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Google</a>
+            </div>
+          </div>
+          <div class="relative">
+            <button class="filter-toggle flex items-center gap-2 bg-gray-100 px-4 py-2 !rounded-button text-gray-700" data-filter="price">Price<i class="ri-arrow-down-s-line"></i></button>
+            <div class="filter-dropdown hidden absolute z-10 bg-white border border-gray-200 rounded shadow-lg mt-2 w-48">
+              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">$0 - $500</a>
+              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">$500 - $1000</a>
+              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">$1000+</a>
+            </div>
+          </div>
+          <div class="relative">
+            <button class="filter-toggle flex items-center gap-2 bg-gray-100 px-4 py-2 !rounded-button text-gray-700" data-filter="condition">Condition<i class="ri-arrow-down-s-line"></i></button>
+            <div class="filter-dropdown hidden absolute z-10 bg-white border border-gray-200 rounded shadow-lg mt-2 w-48">
+              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">New</a>
+              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Refurbished</a>
+              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Used</a>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <button class="filter-toggle flex items-center gap-2 bg-gray-100 px-4 py-2 !rounded-button text-gray-700" data-filter="sort">Sort by: Newest<i class="ri-arrow-down-s-line"></i></button>
+          <div class="filter-dropdown hidden absolute z-10 bg-white border border-gray-200 rounded shadow-lg mt-2 w-48 right-0">
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Newest</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Price: Low to High</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Price: High to Low</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Phones Grid -->
+  <section class="py-12 bg-gray-50" id="shop">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">Featured Phones</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Phone Card 1 -->
+        <div class="phone-card bg-white rounded shadow-sm hover:shadow-lg transition-all duration-300">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1699475599739-2d0f8b201489" alt="iPhone 15 Pro Max" class="w-full h-64 object-cover object-top rounded-t">
+            <span class="condition-badge refurbished absolute top-4 right-4 text-xs font-medium px-2 py-1 rounded-full">Renewed</span>
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-900">iPhone 15 Pro Max</h3>
+            <div class="mt-2 text-sm text-gray-600">
+              <p>8GB RAM • 512GB Storage</p>
+              <p>6.7" Super Retina XDR</p>
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-xl font-bold text-gray-900">$899</span>
+              <button class="bg-primary text-white px-3 py-2 !rounded-button text-sm font-medium whitespace-nowrap">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Phone Card 2 -->
+        <div class="phone-card bg-white rounded shadow-sm hover:shadow-lg transition-all duration-300">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1705994536361-ea4b1d9d2527" alt="Samsung Galaxy S24 Ultra" class="w-full h-64 object-cover object-top rounded-t">
+            <span class="condition-badge used absolute top-4 right-4 text-xs font-medium px-2 py-1 rounded-full">Used</span>
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-900">Galaxy S24 Ultra</h3>
+            <div class="mt-2 text-sm text-gray-600">
+              <p>12GB RAM • 512GB Storage</p>
+              <p>6.8" Dynamic AMOLED 2X</p>
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-xl font-bold text-gray-900">$949</span>
+              <button class="bg-primary text-white px-3 py-2 !rounded-button text-sm font-medium whitespace-nowrap">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Phone Card 3 -->
+        <div class="phone-card bg-white rounded shadow-sm hover:shadow-lg transition-all duration-300">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1699475599739-2d0f8b201489" alt="iPhone 15" class="w-full h-64 object-cover object-top rounded-t">
+            <span class="condition-badge refurbished absolute top-4 right-4 text-xs font-medium px-2 py-1 rounded-full">Renewed</span>
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-900">iPhone 15</h3>
+            <div class="mt-2 text-sm text-gray-600">
+              <p>6GB RAM • 256GB Storage</p>
+              <p>6.1" Super Retina XDR</p>
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-xl font-bold text-gray-900">$649</span>
+              <button class="bg-primary text-white px-3 py-2 !rounded-button text-sm font-medium whitespace-nowrap">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Phone Card 4 -->
+        <div class="phone-card bg-white rounded shadow-sm hover:shadow-lg transition-all duration-300">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1700508612991-4f0b7c39e139" alt="Google Pixel 8 Pro" class="w-full h-64 object-cover object-top rounded-t">
+            <span class="condition-badge used absolute top-4 right-4 text-xs font-medium px-2 py-1 rounded-full">Used</span>
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-900">Google Pixel 8 Pro</h3>
+            <div class="mt-2 text-sm text-gray-600">
+              <p>12GB RAM • 256GB Storage</p>
+              <p>6.7" LTPO OLED</p>
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-xl font-bold text-gray-900">$699</span>
+              <button class="bg-primary text-white px-3 py-2 !rounded-button text-sm font-medium whitespace-nowrap">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Phone Card 5 -->
+        <div class="phone-card bg-white rounded shadow-sm hover:shadow-lg transition-all duration-300">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1705994536361-ea4b1d9d2527" alt="Samsung Galaxy S24+" class="w-full h-64 object-cover object-top rounded-t">
+            <span class="condition-badge refurbished absolute top-4 right-4 text-xs font-medium px-2 py-1 rounded-full">Renewed</span>
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-900">Galaxy S24+</h3>
+            <div class="mt-2 text-sm text-gray-600">
+              <p>12GB RAM • 256GB Storage</p>
+              <p>6.7" Dynamic AMOLED 2X</p>
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-xl font-bold text-gray-900">$749</span>
+              <button class="bg-primary text-white px-3 py-2 !rounded-button text-sm font-medium whitespace-nowrap">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Phone Card 6 -->
+        <div class="phone-card bg-white rounded shadow-sm hover:shadow-lg transition-all duration-300">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1700508612991-4f0b7c39e139" alt="Google Pixel 8" class="w-full h-64 object-cover object-top rounded-t">
+            <span class="condition-badge used absolute top-4 right-4 text-xs font-medium px-2 py-1 rounded-full">Used</span>
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-900">Google Pixel 8</h3>
+            <div class="mt-2 text-sm text-gray-600">
+              <p>8GB RAM • 128GB Storage</p>
+              <p>6.2" OLED</p>
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-xl font-bold text-gray-900">$499</span>
+              <button class="bg-primary text-white px-3 py-2 !rounded-button text-sm font-medium whitespace-nowrap">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-10 text-center">
+        <button class="bg-white border border-gray-300 text-gray-700 px-6 py-3 !rounded-button font-medium whitespace-nowrap hover:bg-gray-50">Load More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Buy a Phone CTA Section -->
+  <section class="py-16 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Can't Find What You're Looking For?</h2>
+        <p class="text-lg opacity-90 mb-8">Tell us your requirements and we'll help you find the perfect device</p>
+        <button id="openChatBtn" class="bg-white text-primary px-8 py-4 !rounded-button font-semibold text-lg whitespace-nowrap shadow-lg hover:shadow-xl transition-all">Buy a Phone</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chat Form Modal -->
+  <div id="chatFormModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-lg w-full max-w-md mx-4 overflow-hidden shadow-xl">
+      <div class="flex items-center justify-between bg-primary text-white px-6 py-4">
+        <h3 class="text-xl font-semibold">Find Your Perfect Phone</h3>
+        <button id="closeModalBtn" class="w-8 h-8 flex items-center justify-center text-white hover:bg-primary-dark rounded-full" aria-label="Close modal">
+          <i class="ri-close-line ri-lg"></i>
+        </button>
+      </div>
+      <div class="p-6">
+        <div class="mb-6">
+          <div class="flex mb-4">
+            <div class="w-8 h-8 flex items-center justify-center bg-primary text-white rounded-full mr-3 flex-shrink-0">1</div>
+            <div class="text-gray-700">
+              <h4 class="font-medium">Personal Information</h4>
+              <p class="text-sm text-gray-500">We'll use this to contact you about your device</p>
+            </div>
+          </div>
+          <form id="chatForm" class="space-y-4">
+            <div class="chat-form active" id="step1">
+              <div class="mb-4">
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="Enter your name" required>
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="Enter your email" required>
+              </div>
+              <div class="mb-4">
+                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="Enter your phone number">
+              </div>
+              <div class="flex justify-end">
+                <button type="button" class="next-step bg-primary text-white px-6 py-2 !rounded-button font-medium whitespace-nowrap" data-current="step1" data-next="step2">Next</button>
+              </div>
+            </div>
+            <div class="chat-form hidden" id="step2">
+              <div class="flex mb-4">
+                <div class="w-8 h-8 flex items-center justify-center bg-primary text-white rounded-full mr-3 flex-shrink-0">2</div>
+                <div class="text-gray-700">
+                  <h4 class="font-medium">Device Preferences</h4>
+                  <p class="text-sm text-gray-500">Tell us what kind of phone you're looking for</p>
+                </div>
+              </div>
+              <div class="mb-4">
+                <label for="brand" class="block text-sm font-medium text-gray-700 mb-1">Preferred Brand</label>
+                <div class="relative">
+                  <select id="brand" name="brand" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none appearance-none pr-8">
+                    <option value="">Select a brand</option>
+                    <option value="apple">Apple</option>
+                    <option value="samsung">Samsung</option>
+                    <option value="google">Google</option>
+                    <option value="oneplus">OnePlus</option>
+                    <option value="xiaomi">Xiaomi</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                    <i class="ri-arrow-down-s-line text-gray-400"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <label for="model" class="block text-sm font-medium text-gray-700 mb-1">Preferred Model</label>
+                <input type="text" id="model" name="model" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="E.g. iPhone 13, Galaxy S22">
+              </div>
+              <div class="flex justify-between">
+                <button type="button" class="prev-step bg-gray-200 text-gray-700 px-6 py-2 !rounded-button font-medium whitespace-nowrap" data-current="step2" data-prev="step1">Back</button>
+                <button type="button" class="next-step bg-primary text-white px-6 py-2 !rounded-button font-medium whitespace-nowrap" data-current="step2" data-next="step3">Next</button>
+              </div>
+            </div>
+            <div class="chat-form hidden" id="step3">
+              <div class="flex mb-4">
+                <div class="w-8 h-8 flex items-center justify-center bg-primary text-white rounded-full mr-3 flex-shrink-0">3</div>
+                <div class="text-gray-700">
+                  <h4 class="font-medium">Specifications</h4>
+                  <p class="text-sm text-gray-500">Fine-tune your device requirements</p>
+                </div>
+              </div>
+              <div class="mb-4">
+                <label for="storage" class="block text-sm font-medium text-gray-700 mb-1">Storage Capacity</label>
+                <div class="relative">
+                  <select id="storage" name="storage" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none appearance-none pr-8">
+                    <option value="">Select storage size</option>
+                    <option value="64">64GB</option>
+                    <option value="128">128GB</option>
+                    <option value="256">256GB</option>
+                    <option value="512">512GB</option>
+                    <option value="1024">1TB</option>
+                  </select>
+                  <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                    <i class="ri-arrow-down-s-line text-gray-400"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <label for="color" class="block text-sm font-medium text-gray-700 mb-1">Preferred Color</label>
+                <input type="text" id="color" name="color" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="E.g. Black, White, Blue">
+              </div>
+              <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700 mb-1">Condition</label>
+                <div class="flex space-x-4">
+                  <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="condition" value="new" class="hidden">
+                    <span class="w-4 h-4 border border-gray-300 rounded-full flex items-center justify-center mr-2 condition-radio">
+                      <span class="w-2 h-2 bg-primary rounded-full hidden condition-radio-dot"></span>
+                    </span>
+                    <span>New</span>
+                  </label>
+                  <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="condition" value="refurbished" class="hidden">
+                    <span class="w-4 h-4 border border-gray-300 rounded-full flex items-center justify-center mr-2 condition-radio">
+                      <span class="w-2 h-2 bg-primary rounded-full hidden condition-radio-dot"></span>
+                    </span>
+                    <span>Refurbished</span>
+                  </label>
+                  <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="condition" value="used" class="hidden">
+                    <span class="w-4 h-4 border border-gray-300 rounded-full flex items-center justify-center mr-2 condition-radio">
+                      <span class="w-2 h-2 bg-primary rounded-full hidden condition-radio-dot"></span>
+                    </span>
+                    <span>Used</span>
+                  </label>
+                </div>
+              </div>
+              <div class="flex justify-between">
+                <button type="button" class="prev-step bg-gray-200 text-gray-700 px-6 py-2 !rounded-button font-medium whitespace-nowrap" data-current="step3" data-prev="step2">Back</button>
+                <button type="submit" class="bg-primary text-white px-6 py-2 !rounded-button font-medium whitespace-nowrap">Submit Request</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Warranty Information Section -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8">Warranty Information</h2>
+        <div class="border border-gray-200 rounded divide-y divide-gray-200">
+          <!-- Warranty Item 1 -->
+          <div class="warranty-item">
+            <button class="warranty-toggle flex items-center justify-between w-full p-4 text-left focus:outline-none" aria-expanded="false">
+              <div class="flex items-center">
+                <div class="w-10 h-10 flex items-center justify-center bg-blue-100 text-primary rounded-full mr-3">
+                  <i class="ri-shield-check-line ri-lg"></i>
+                </div>
+                <span class="font-medium text-gray-900">Standard Warranty Coverage</span>
+              </div>
+              <i class="ri-arrow-down-s-line warranty-arrow transition-transform duration-200"></i>
+            </button>
+            <div class="warranty-content px-6 py-6 pl-16">
+              <ul class="space-y-4 text-gray-600 leading-relaxed">
+                <li class="flex items-start">
+                  <i class="ri-check-line text-primary mt-1.5 mr-3"></i>
+                  <span>90-day warranty on all new devices covering manufacturing defects</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="ri-check-line text-primary mt-1.5 mr-3"></i>
+                  <span>45-day warranty on refurbished devices</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="ri-check-line text-primary mt-1.5 mr-3"></i>
+                  <span>30-day warranty on used devices</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="ri-check-line text-primary mt-1.5 mr-3"></i>
+                  <span>Free repair or replacement for covered issues</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Warranty Item 2 -->
+          <div class="warranty-item">
+            <button class="warranty-toggle flex items-center justify-between w-full p-4 text-left focus:outline-none" aria-expanded="false">
+              <div class="flex items-center">
+                <div class="w-10 h-10 flex items-center justify-center bg-blue-100 text-primary rounded-full mr-3">
+                  <i class="ri-error-warning-line ri-lg"></i>
+                </div>
+                <span class="font-medium text-gray-900">Warranty Exclusions</span>
+              </div>
+              <i class="ri-arrow-down-s-line warranty-arrow transition-transform duration-200"></i>
+            </button>
+            <div class="warranty-content px-6 py-6 pl-16">
+              <ul class="space-y-4 text-gray-600 leading-relaxed">
+                <li class="flex items-start">
+                  <i class="ri-close-line text-red-500 mt-1.5 mr-3"></i>
+                  <span>Physical damage (drops, cracks, liquid damage)</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="ri-close-line text-red-500 mt-1.5 mr-3"></i>
+                  <span>Unauthorized repairs or modifications</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="ri-close-line text-red-500 mt-1.5 mr-3"></i>
+                  <span>Normal wear and tear</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="ri-close-line text-red-500 mt-1.5 mr-3"></i>
+                  <span>Software issues not related to hardware defects</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Warranty Item 3 -->
+          <div class="warranty-item">
+            <button class="warranty-toggle flex items-center justify-between w-full p-4 text-left focus:outline-none" aria-expanded="false">
+              <div class="flex items-center">
+                <div class="w-10 h-10 flex items-center justify-center bg-blue-100 text-primary rounded-full mr-3">
+                  <i class="ri-award-line ri-lg"></i>
+                </div>
+                <span class="font-medium text-gray-900">Extended Warranty Options</span>
+              </div>
+              <i class="ri-arrow-down-s-line warranty-arrow transition-transform duration-200"></i>
+            </button>
+            <div class="warranty-content px-6 py-6 pl-16">
+              <div class="space-y-6 text-gray-600 leading-relaxed">
+                <p class="text-base">Extend your device protection with our premium warranty options:</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="border border-gray-200 rounded p-5">
+                    <h4 class="font-medium text-gray-900 mb-3">Premium Protection</h4>
+                    <p class="text-sm mb-3 leading-relaxed">24-month coverage including accidental damage</p>
+                    <p class="text-primary font-medium">$79.99</p>
+                  </div>
+                  <div class="border border-gray-200 rounded p-5">
+                    <h4 class="font-medium text-gray-900 mb-3">Complete Care</h4>
+                    <p class="text-sm mb-3 leading-relaxed">36-month coverage with theft protection</p>
+                    <p class="text-primary font-medium">$129.99</p>
+                  </div>
+                </div>
+                <p class="text-sm mt-4">Extended warranty must be purchased within 30 days of device purchase.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Warranty Item 4 -->
+          <div class="warranty-item">
+            <button class="warranty-toggle flex items-center justify-between w-full p-4 text-left focus:outline-none" aria-expanded="false">
+              <div class="flex items-center">
+                <div class="w-10 h-10 flex items-center justify-center bg-blue-100 text-primary rounded-full mr-3">
+                  <i class="ri-file-text-line ri-lg"></i>
+                </div>
+                <span class="font-medium text-gray-900">How to Claim Warranty</span>
+              </div>
+              <i class="ri-arrow-down-s-line warranty-arrow transition-transform duration-200"></i>
+            </button>
+            <div class="warranty-content px-6 py-6 pl-16">
+              <ol class="space-y-4 text-gray-600 list-decimal pl-4 leading-relaxed">
+                <li>Contact our customer support at support@themobiletechs.com or call 1-208-553-9875</li>
+                <li>Provide your order number and describe the issue with your device</li>
+                <li>Our team will provide you with a return authorization and shipping instructions</li>
+                <li>Ship your device using the provided label</li>
+                <li>Once received, we'll diagnose the issue and repair or replace your device within 5-7 business days</li>
+              </ol>
+              <div class="mt-6">
+                <a href="/warranty-terms.pdf" class="text-primary flex items-center hover:underline">
+                  <i class="ri-download-line mr-2"></i>
+                  <span>Download Complete Warranty Terms (PDF)</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-12 pb-6">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div>
+          <a href="/" class="flex items-center text-2xl font-bold mb-4">
+            <span class="text-white">Mobile</span>
+            <span class="text-red-500 flex items-center">Techs
+              <i class="ri-quill-pen-line text-red-500 transform -rotate-90 ml-1 h-6 w-6 flex items-center justify-center"></i>
+            </span>
+          </a>
+          <p class="text-gray-400 mb-4">Your trusted partner for selling, buying, and repairing mobile devices since 2010.</p>
+          <div class="flex space-x-4">
+            <a href="https://facebook.com/mobiletechs" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+              <i class="ri-facebook-fill text-white"></i>
+            </a>
+            <a href="https://twitter.com/mobiletechs" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+              <i class="ri-twitter-x-fill text-white"></i>
+            </a>
+            <a href="https://instagram.com/mobiletechs" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+              <i class="ri-instagram-fill text-white"></i>
+            </a>
+            <a href="https://youtube.com/mobiletechs" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+              <i class="ri-youtube-fill text-white"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="/index.html" class="text-gray-400 hover:text-white">Home</a></li>
+            <li><a href="/fix.html" class="text-gray-400 hover:text-white">Fix Your Device</a></li>
+            <li><a href="/buy.html" class="text-gray-400 hover:text-white">Buy Phones</a></li>
+            <li><a href="/sell.html" class="text-gray-400 hover:text-white">Sell Your Phone</a></li>
+            <li><a href="/about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+            <li><a href="/faq.html" class="text-gray-400 hover:text-white">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Support</h4>
+          <ul class="space-y-2">
+            <li><a href="/faq.html" class="text-gray-400 hover:text-white">FAQs</a></li>
+            <li><a href="/shipping.html" class="text-gray-400 hover:text-white">Shipping Policy</a></li>
+            <li><a href="/returns.html" class="text-gray-400 hover:text-white">Return Policy</a></li>
+            <li><a href="/warranty.html" class="text-gray-400 hover:text-white">Warranty Information</a></li>
+            <li><a href="/privacy.html" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+            <li><a href="/terms.html" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Contact</h4>
+          <ul class="space-y-3 text-gray-400">
+            <li class="flex items-start"><i class="ri-map-pin-line mt-1 mr-3 text-primary"></i>824 21st St. Lewiston, ID 83501</li>
+            <li class="flex items-start"><i class="ri-phone-line mt-1 mr-3 text-primary"></i>(208) 553-9875</li>
+            <li class="flex items-start"><i class="ri-mail-line mt-1 mr-3 text-primary"></i>support@themobiletechs.com</li>
+            <li class="flex items-start"><i class="ri-time-line mt-1 mr-3 text-primary"></i>Mon–Fri: 8AM–6PM, Sat: By Appointment</li>
+          </ul>
+          <div class="mt-6">
+            <h5 class="text-sm font-semibold uppercase tracking-wider mb-3">We Accept</h5>
+            <div class="flex space-x-3">
+              <i class="ri-visa-fill text-2xl text-gray-400"></i>
+              <i class="ri-mastercard-fill text-2xl text-gray-400"></i>
+              <i class="ri-paypal-fill text-2xl text-gray-400"></i>
+              <i class="ri-apple-fill text-2xl text-gray-400"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-6 mt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2025 Mobile Techs. All rights reserved.</p>
+        <div class="flex space-x-6">
+          <a href="/privacy.html" class="text-gray-500 text-sm hover:text-white">Privacy Policy</a>
+          <a href="/terms.html" class="text-gray-500 text-sm hover:text-white">Terms of Service</a>
+          <a href="/cookies.html" class="text-gray-500 text-sm hover:text-white">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Mobile menu toggle
+      const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Filter dropdowns (placeholder)
+      const filterToggles = document.querySelectorAll('.filter-toggle');
+      filterToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const dropdown = toggle.nextElementSibling;
+          dropdown.classList.toggle('hidden');
+        });
+      });
+
+      // Warranty accordion
+      const warrantyToggles = document.querySelectorAll('.warranty-toggle');
+      warrantyToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const content = toggle.nextElementSibling;
+          const arrow = toggle.querySelector('.warranty-arrow');
+          const isActive = content.classList.contains('active');
+          warrantyToggles.forEach(t => {
+            t.nextElementSibling.classList.remove('active');
+            t.querySelector('.warranty-arrow').style.transform = 'rotate(0deg)';
+            t.setAttribute('aria-expanded', 'false');
+          });
+          if (!isActive) {
+            content.classList.add('active');
+            arrow.style.transform = 'rotate(180deg)';
+            toggle.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      // Chat form modal
+      const openChatBtn = document.getElementById('openChatBtn');
+      const closeModalBtn = document.getElementById('closeModalBtn');
+      const chatFormModal = document.getElementById('chatFormModal');
+      openChatBtn.addEventListener('click', () => {
+        chatFormModal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      });
+      closeModalBtn.addEventListener('click', () => {
+        chatFormModal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      });
+      chatFormModal.addEventListener('click', e => {
+        if (e.target === chatFormModal) {
+          chatFormModal.classList.add('hidden');
+          document.body.style.overflow = 'auto';
+        }
+      });
+
+      // Form navigation
+      const nextButtons = document.querySelectorAll('.next-step');
+      const prevButtons = document.querySelectorAll('.prev-step');
+      nextButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const currentStep = button.getAttribute('data-current');
+          const nextStep = button.getAttribute('data-next');
+          document.getElementById(currentStep).classList.add('hidden');
+          document.getElementById(currentStep).classList.remove('active');
+          document.getElementById(nextStep).classList.remove('hidden');
+          document.getElementById(nextStep).classList.add('active');
+        });
+      });
+      prevButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const currentStep = button.getAttribute('data-current');
+          const prevStep = button.getAttribute('data-prev');
+          document.getElementById(currentStep).classList.add('hidden');
+          document.getElementById(currentStep).classList.remove('active');
+          document.getElementById(prevStep).classList.remove('hidden');
+          document.getElementById(prevStep).classList.add('active');
+        });
+      });
+
+      // Custom radio buttons
+      const conditionRadios = document.querySelectorAll('input[name="condition"]');
+      conditionRadios.forEach(radio => {
+        radio.addEventListener('change', () => {
+          document.querySelectorAll('.condition-radio-dot').forEach(dot => dot.classList.add('hidden'));
+          document.querySelectorAll('.condition-radio').forEach(border => {
+            border.classList.remove('border-primary');
+            border.classList.add('border-gray-300');
+          });
+          if (radio.checked) {
+            const dot = radio.nextElementSibling.querySelector('.condition-radio-dot');
+            dot.classList.remove('hidden');
+            radio.nextElementSibling.classList.remove('border-gray-300');
+            radio.nextElementSibling.classList.add('border-primary');
+          }
+        });
+      });
+
+      // Form submission
+      const chatForm = document.getElementById('chatForm');
+      chatForm.addEventListener('submit', e => {
+        e.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        if (!name || !email) {
+          alert('Please fill out all required fields.');
+          return;
+        }
+        const submitBtn = chatForm.querySelector('button[type="submit"]');
+        submitBtn.textContent = 'Submitting...';
+        submitBtn.disabled = true;
+        setTimeout(() => {
+          alert('Thank you for your request! Our team will contact you shortly.');
+          chatFormModal.classList.add('hidden');
+          document.body.style.overflow = 'auto';
+          chatForm.reset();
+          document.querySelectorAll('.chat-form').forEach(step => step.classList.add('hidden'));
+          document.getElementById('step1').classList.remove('hidden');
+          document.getElementById('step1').classList.add('active');
+          submitBtn.textContent = 'Submit Request';
+          submitBtn.disabled = false;
+        }, 1500);
+      });
+    });
+  </script>
 </body>
 </html>
