@@ -146,7 +146,7 @@
   <header class="w-full bg-white shadow-sm sticky top-0 z-50">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
       <a href="/" class="flex items-center gap-0">
-        <span class="text-2xl font-bold text-primary logo-text">Mobile</span>
+        <span class="text-2xl font-bold text-blue-600 logo-text">Mobile</span>
         <span class="text-2xl font-bold text-red-500 logo-text flex items-center">Techs
           <i class="ri-quill-pen-line text-red-500 transform -rotate-90 ml-1 h-6 w-6 flex items-center justify-center"></i>
         </span>
@@ -163,15 +163,6 @@
           <a href="/about.html" class="text-gray-700 hover:text-primary font-medium">About</a>
           <a href="/faq.html" class="text-gray-700 hover:text-primary font-medium">FAQ</a>
         </nav>
-        <div class="hidden md:flex items-center space-x-4 ml-8">
-          <button class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary" aria-label="Search">
-            <i class="ri-search-line ri-lg"></i>
-          </button>
-          <button class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary" aria-label="Cart">
-            <i class="ri-shopping-cart-line ri-lg"></i>
-          </button>
-          <button class="bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap">Sign In</button>
-        </div>
       </div>
     </div>
     <!-- Mobile Menu -->
@@ -335,21 +326,21 @@
               <p class="mb-6">Due to the unique nature of each repair, our certified technicians will assess your device and provide an accurate quote tailored to your specific issue.</p>
               <div class="space-y-4 mb-8">
                 <div class="flex items-start">
-                  <div class="w-6 h-6 flex items-center justify-center mr-3 mt-0.5 text-primary">
-                    <i class="ri-time-line"></i>
+                  <div class="w-6 h-5 flex items-center justify-center mr-3">
+                    <i class="ri-time-line text-white"></i>
                   </div>
                   <div>
                     <h4 class="font-semibold">During Store Hours</h4>
-                    <p class="text-gray-300">A technician will contact you within 15 minutes</p>
+                    <p class="text-gray-400">A technician will contact you within 12 hours</p>
                   </div>
                 </div>
                 <div class="flex items-start">
-                  <div class="w-6 h-6 flex items-center justify-center mr-3 mt-0.5 text-primary">
-                    <i class="ri-calendar-line"></i>
+                  <div class="w-6 h-5 flex items-center justify-center mr-3">
+                    <i class="ri-calendar-week-line"></i>
                   </div>
                   <div>
-                    <h4 class="font-semibold">On Weekends</h4>
-                    <p class="text-gray-300">Response within 12 hours</p>
+                    <h4 class="font-medium">On Weekends</h4>
+                    <p class="text-gray-400">Response time may vary</p>
                   </div>
                 </div>
               </div>
@@ -394,7 +385,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
         <div>
           <a href="/" class="flex items-center text-2xl font-bold mb-4 logo-text">
-            <span class="text-white">Mobile</span>
+            <span class="text-blue-600">Mobile</span>
             <span class="text-red-500 flex items-center">Techs
               <i class="ri-quill-pen-line text-red-500 transform -rotate-90 ml-1 h-6 w-6 flex items-center justify-center"></i>
             </span>
@@ -500,30 +491,30 @@
       const nameInput = document.getElementById('name');
       startRepairBtn.addEventListener('click', () => {
         repairSection.scrollIntoView({ behavior: 'smooth' });
-        setTimeout(() => nameInput.focus(), 800);
+        setTimeout(() => nameInput.focus(), 768);
       });
 
-      // Brand and model dependency
+      // Brand and model dropdowns
       const brandSelect = document.getElementById('brand');
       const modelSelect = document.getElementById('model');
       const modalBrandSelect = document.getElementById('modal-brand');
       const modalModelSelect = document.getElementById('modal-model');
       const phoneModels = {
-        apple: ['iPhone 15 Pro Max', 'iPhone 15 Pro', 'iPhone 15', 'iPhone 14 Pro Max', 'iPhone 14 Pro', 'iPhone 14', 'iPhone 13', 'iPhone 12', 'iPhone 11', 'iPhone SE (2022)'],
-        samsung: ['Galaxy S24 Ultra', 'Galaxy S24+', 'Galaxy S24', 'Galaxy S23 Ultra', 'Galaxy S23', 'Galaxy Z Fold 5', 'Galaxy Z Flip 5', 'Galaxy A54'],
+        apple: ['iPhone 15 Pro Max', 'iPhone 15 Pro', 'iPhone 15', 'iPhone 14 Pro Max', 'iPhone 14 Pro', 'iPhone 14', 'iPhone 13', 'iPhone 12', 'iPhone SE'],
+        samsung: ['Galaxy S24 Ultra', 'Galaxy S24', 'Galaxy S23 Ultra', 'Galaxy S23', 'Galaxy Z', 'Galaxy A'],
         google: ['Pixel 8 Pro', 'Pixel 8', 'Pixel 7 Pro', 'Pixel 7', 'Pixel 6'],
-        huawei: ['Mate 60 Pro', 'P60 Pro', 'Mate 50', 'P50 Pro'],
-        xiaomi: ['Xiaomi 14', 'Xiaomi 13 Pro', 'Redmi Note 13 Pro', 'Redmi Note 12'],
+        huawei: ['Mate 60', 'P60 Pro', 'Mate 50', 'P50'],
+        xiaomi: ['Xiaomi 14', 'Xiaomi 13', 'Redmi Note', 'Redmi'],
         other: ['Other']
       };
       const updateModelOptions = (brandSel, modSel) => {
         const brand = brandSel.value;
-        modSel.innerHTML = '<option value="" disabled selected>Select an option</option>';
+        modSel.innerHTML = '<option value="" disabled selected>Select model</option>';
         modSel.disabled = !brand;
         if (brand && phoneModels[brand]) {
           phoneModels[brand].forEach(model => {
             const option = document.createElement('option');
-            option.value = model.toLowerCase().replace(/\s+/g, '-');
+            option.value = model.toLowerCase().replace(/\s+/g, '');
             option.textContent = model;
             modSel.appendChild(option);
           });
@@ -558,7 +549,7 @@
             }
             modelSelect.innerHTML = '<option value="" disabled selected>Select model (choose brand first)</option>';
             modelSelect.disabled = true;
-            modalModelSelect.innerHTML = '<option value="" disabled selected>Select model (choose brand first)</option>';
+            modalModelSelect.innerHTML = '<option value="" disabled selected>Select model (choose brand)</option>';
             modalModelSelect.disabled = true;
             submitBtn.textContent = isModal ? 'Submit Quote Request' : 'Submit Repair Request';
             submitBtn.disabled = false;
