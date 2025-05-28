@@ -94,22 +94,43 @@
   </script>
 
   <!-- Header -->
-  <a href="index.html" class="flex items-center">
-  <img src="/logo.png" alt="Mobile Techs Logo" class="h-10 md:h-12 w-auto">
-</a>
-      <div class="flex items-center">
-        <button id="mobile-menu-toggle" class="md:hidden flex items-center justify-center w-10 h-10" aria-label="Toggle mobile menu">
-          <i class="ri-menu-line text-gray-700 ri-lg"></i>
-        </button>
-        <nav id="nav-menu" class="hidden md:flex space-x-8">
-          <a href="/" class="text-gray-700 hover:text-primary font-medium">Home</a>
-          <a href="/fix.html" class="text-gray-700 hover:text-primary font-medium">Fix</a>
-          <a href="/buy.html" class="text-gray-700 hover:text-primary font-medium">Buy</a>
-          <a href="/sell.html" class="text-gray-700 hover:text-primary font-medium">Sell</a>
-          <a href="/about.html" class="text-gray-700 hover:text-primary font-medium">About</a>
-          <a href="/faq.html" class="text-primary font-medium border-b-2 border-primary">FAQ</a>
-        </nav>
-      </div>
+<header class="bg-white shadow-sm">
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center">
+      <img src="logo.png" alt="Mobile Techs Logo" class="h-10 md:h-12 w-auto" />
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-8 items-center">
+      <a href="index.html" class="text-gray-700 hover:text-primary font-medium">Home</a>
+      <a href="fix.html" class="text-gray-700 hover:text-primary font-medium">Fix</a>
+      <a href="buy.html" class="text-gray-700 hover:text-primary font-medium">Buy</a>
+      <a href="sell.html" class="text-gray-700 hover:text-primary font-medium">Sell</a>
+      <a href="about.html" class="text-gray-700 hover:text-primary font-medium">About</a>
+      <a href="faq.html" class="text-primary font-medium border-b-2 border-primary">FAQ</a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden">
+      <button id="mobile-menu-toggle" class="text-gray-700 focus:outline-none">
+        <i class="ri-menu-line text-2xl"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Nav -->
+  <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+    <nav class="flex flex-col space-y-2">
+      <a href="index.html" class="text-gray-700 hover:text-primary font-medium">Home</a>
+      <a href="fix.html" class="text-gray-700 hover:text-primary font-medium">Fix</a>
+      <a href="buy.html" class="text-gray-700 hover:text-primary font-medium">Buy</a>
+      <a href="sell.html" class="text-gray-700 hover:text-primary font-medium">Sell</a>
+      <a href="about.html" class="text-gray-700 hover:text-primary font-medium">About</a>
+      <a href="faq.html" class="text-primary font-medium border-b-2 border-primary">FAQ</a>
+    </nav>
+  </div>
+</header>
     </div>
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-white shadow-sm">
