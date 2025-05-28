@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Mobile Techs offers expert mobile device repair, certified pre-owned phones, and trade-in services. Fast, reliable, and backed by a 90-day warranty.">
-  <meta name="keywords" content="mobile repair, phone repair, buy used phones, sell phones, Mobile Techs, San Francisco">
+  <meta name="keywords" content="mobile repair, phone repair, buy used phones, sell phones, Mobile Techs, Lewiston">
   <meta name="author" content="Mobile Techs">
   <!-- OpenGraph Tags -->
   <meta property="og:title" content="Mobile Techs - Professional Mobile Repair Services">
   <meta property="og:description" content="Fast, reliable repairs for all your devices. Buy certified pre-owned phones or sell your device for the best value.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://mobiletechs.com">
-  <meta property="og:image" content="https://mobiletechs.com/assets/og-image.jpg">
+  <meta property="og:url" content="https://themobiletechs.com">
+  <meta property="og:image" content="https://themobiletechs.com/assets/og-image.jpg">
   <!-- Mobile Tags -->
   <meta name="theme-color" content="#0066cc">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -183,8 +183,8 @@
     <div class="absolute inset-0 hero-overlay z-10"></div>
     <div class="container mx-auto px-4 py-20 relative z-20">
       <div class="max-w-2xl">
-        <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Expert Mobile Device Repair & Services</h1>
-        <p class="text-xl md:text-2xl text-gray-700 mb-8">Fast, reliable repairs for all your devices. Buy certified pre-owned phones or sell your device for the best value.</p>
+        <h1 class="text-5xl font-bold text-gray-900 mb-6">Expert Mobile Device Repair & Services</h1>
+        <p class="text-xl text-gray-700 mb-8">Fast, reliable repairs for all your devices. Buy certified pre-owned phones or sell your device for the best value.</p>
         <div class="flex flex-wrap gap-4">
           <a href="/fix.html" class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-primary/90 transition whitespace-nowrap" aria-label="Start repair process">Start My Repair</a>
           <a href="/about.html" class="bg-white border border-gray-300 text-gray-800 px-6 py-3 rounded-button font-medium hover:bg-gray-50 transition whitespace-nowrap" aria-label="Learn more about Mobile Techs">Learn More</a>
@@ -403,43 +403,43 @@
         <div>
           <h3 class="text-lg font-semibold mb-4">Services</h3>
           <ul class="space-y-2">
-            <li><a href="/services" class="text-gray-400 hover:text-white">Screen Repair</a></a>
-            <li><a href="/services" class="text-gray-400 hover:text-white">Battery Replacement</a></li>
-            <li><a href="/services" class="text-gray-400 hover:text-white">Water Damage</a></li>
+            <li><a href="/services/screen-repair" class="text-gray-400 hover:text-white">Screen Repair</a></li>
+            <li><a href="/services/battery-replacement" class="text-gray-400 hover:text-white">Battery Replacement</a></li>
+            <li><a href="/services/water-damage" class="text-gray-400 hover:text-white">Water Damage</a></li>
             <li><a href="/buy.html" class="text-gray-400 hover:text-white">Certified Pre-Owned</a></li>
-            <li><a href="/sell.html" class="text-gray-400 hover:text-white">Trade-In</a></li>
-            <li><a href="/services" class="text-gray-400">Data Recovery</a></li>
+            <li><a href="/sell.html" class="text-gray-400 hover:text-white">Trade-In Program</a></li>
+            <li><a href="/services/data-recovery" class="text-gray-400 hover:text-white">Data Recovery</a></li>
           </ul>
         </div>
         <div>
           <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
-          <ul class="space-y-2 text-sm text-gray-400">
+          <ul class="space-y-2 text-gray-400">
             <li class="flex items-start">
               <i class="ri-map-pin-line ri-lg mr-2 mt-1"></i>
-              <span>123 Tech Street, Suite 101<br>San Francisco, CA 94107</span>
+              <span>824 21st St.<br>Lewiston, ID 83501</span>
             </li>
             <li class="flex items-center">
               <i class="ri-phone-line ri-lg mr-2"></i>
-              <a href="tel:+5551234567" class="hover:text-white"> (555) 123-4567 </a>
+              <a href="tel:+12085539875" class="hover:text-white">+1 (208) 553-9875</a>
             </li>
             <li class="flex items-center">
               <i class="ri-mail-line ri-lg mr-2"></i>
-              <a href="mailto:info@mobiletechs.com" class="hover:text-white">info@mobiletechs.com</a>
+              <a href="mailto:support@themobiletechs.com" class="hover:text-white">support@themobiletechs.com</a>
             </li>
             <li class="flex items-center">
               <i class="ri-time-line ri-lg mr-2"></i>
-              <span>Mon-Sat: 9AM-6PM</span>
+              <span>Mon–Fri: 8AM–6PM<br>Sat: By Appointment</span>
             </li>
           </ul>
         </div>
       </div>
       <div class="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
         <p>© 2025 Mobile Techs. All rights reserved.</p>
-        <div class="flex justify-center mt-4 gap-4">
+        <div class="flex justify-center mt-4 space-x-4">
           <i class="ri-visa-fill ri-lg" aria-label="Visa"></i>
           <i class="ri-mastercard-fill ri-lg" aria-label="Mastercard"></i>
           <i class="ri-paypal-fill ri-lg" aria-label="PayPal"></i>
-          <i class="ri-android-fill ri-lg" aria-label="Service"></i>
+          <i class="ri-apple-fill ri-lg" aria-label="Apple Pay"></i>
         </div>
       </div>
     </div>
@@ -479,8 +479,8 @@
       const modalDeviceTypeSelect = document.getElementById('modal-device-type');
       const modalModelSelect = document.getElementById('modal-model');
       const deviceModels = {
-        iphone: ['iPhone 15', 'iPhone 15 Pro', 'iPhone 14', 'iPhone Pro14', 'iPhone 13', 'iPhone 12', 'iPhone 11', 'iPhone'],
-        samsung: ['Galaxy S24 Ultra', 'Galaxy S24', 'Galaxy Z Fold 5', 'Galaxy Note 20', 'Galaxy A54'],
+        iphone: ['iPhone 15 Pro Max', 'iPhone 15', 'iPhone 14 Pro', 'iPhone 14', 'iPhone 13', 'iPhone 12', 'iPhone 11', 'iPhone SE'],
+        samsung: ['Galaxy S24 Ultra', 'Galaxy S23', 'Galaxy Z Fold 5', 'Galaxy Note 20', 'Galaxy A54'],
         ipad: ['iPad Pro 12.9"', 'iPad Air', 'iPad Mini', 'iPad 10th Gen'],
         other: ['Google Pixel 8', 'OnePlus 12', 'Other']
       };
@@ -507,7 +507,7 @@
         const email = modalRepairForm.querySelector('[name="email"]').value.trim();
         const deviceType = modalRepairForm.querySelector('[name="device-type"]').value;
         const model = modalRepairForm.querySelector('[name="model"]').value;
-        const problem = modalRepairForm.querySelector('[name="price"]').value.trim();
+        const problem = modalRepairForm.querySelector('[name="problem"]').value.trim();
         if (!name || !email || !deviceType || !model || !problem) {
           alert('Please fill out all required fields.');
           return;
